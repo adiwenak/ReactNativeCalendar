@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/Libraries/Text/RCTFontAttributes.m \
+  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/Libraries/Text/RCTFontAttributes.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/Libraries/Text/RCTFontAttributesDelegate.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h
