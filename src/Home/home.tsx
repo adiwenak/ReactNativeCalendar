@@ -1,23 +1,27 @@
 import { Component } from "react"
 import * as React from "react"
-import { Text, View } from "react-native"
+import { Text, View, ScrollView, StyleSheet } from "react-native"
 import { connect, Dispatch } from "react-redux"
 import { getAllCoins, HomeActions } from "./home.actions"
+
 export interface Actions {
     getCoins: () => void
 }
 
 export interface Props {
     coins: Coin[],
-    isLoading: boolean
+    isLoading: boolean,
+    users: Users[],
 }
+
 
 export interface HomeProps extends Actions, Props {}
 
-export class Home extends Component<HomeProps, any> {
-    componentDidMount() {
-    }
+export function SearchData(){
+    
+}
 
+export class Home extends Component<HomeProps, any> {
     renderCoins() {
         if (!this.props.coins) {
             return null
@@ -36,18 +40,58 @@ export class Home extends Component<HomeProps, any> {
     render() {
         return (
             <View>
-                <Text>{"home"}</Text>
-                {this.renderCoins()}
+                <View style={{backgroundColor:'#1111', height: 60}}></View>
+                <ScrollView>
+                    <ScrollView horizontal contentContainerStyle={{flexGrow: 1}}>
+                    <View style={{flex: 1, flexDirection: 'row', justifyContent:"center", marginHorizontal: 10, marginTop:10}}>
+                        <View style={[styles.backgroundMidle, styles.colorBlue1]}>
+                            <Text style={styles.textAlightCenter}>Adiwena</Text>
+                        </View>
+                        <View style={[styles.backgroundMidle, styles.colorBlue2]}>
+                            <Text style={styles.textAlightCenter}>Adam</Text>
+                        </View>
+                        <View style={[styles.backgroundMidle, styles.colorBlue3]}>
+                            <Text style={styles.textAlightCenter}>Bruno</Text>
+                        </View>   
+                    </View>
+                    </ScrollView>
+                </ScrollView>    
             </View>
         )
     }
 }
 
+const styles = StyleSheet.create({
+    backgroundMidle: {
+        justifyContent: 'center', 
+        alignItems: 'center',
+        margin:2
+    },
+
+    textAlightCenter: {
+        textAlign:"center", 
+        margin: 8,
+    },
+
+    colorBlue1: {
+        backgroundColor: 'powderblue'
+    },
+
+    colorBlue2: {
+        backgroundColor: 'skyblue'
+    },
+
+    colorBlue3: {
+        backgroundColor: 'steelblue'
+    },
+})
+
 export function mapStateToProps(state: StoreState): Props {
-    const { coins, isLoading } = state.home.ui
+    const { coins, isLoading, users } = state.home.ui
     return {
         coins,
-        isLoading
+        isLoading, 
+        users
     }
 }
 

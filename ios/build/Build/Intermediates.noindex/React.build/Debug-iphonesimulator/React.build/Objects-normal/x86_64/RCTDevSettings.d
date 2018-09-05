@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTDevSettings.mm \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTDevSettings.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridge.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTDefines.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTLog.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTAssert.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTUtils.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h

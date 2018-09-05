@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTManagedPointer.mm \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTManagedPointer.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTManagedPointer.mm \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTManagedPointer.h

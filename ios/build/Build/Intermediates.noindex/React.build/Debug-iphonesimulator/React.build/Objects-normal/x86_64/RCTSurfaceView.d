@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView.mm \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView+Internal.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceStage.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurface.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceRootView.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTView.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTPointerEvents.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView.mm \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceView+Internal.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceStage.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/RCTDefines.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurface.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Base/Surface/RCTSurfaceRootView.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTView.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTComponent.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTPointerEvents.h

@@ -10,4 +10,10 @@ interface HomeData {
 interface HomeUI {
     isLoading: boolean
     coins: Coin[]
+    users: Users[]
+}
+
+interface Users {
+    id: string
+    name: string
 }

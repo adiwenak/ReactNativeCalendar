@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h

@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTNavItem.m \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTNavItem.h \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/React/Views/RCTComponent.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTNavItem.m \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTNavItem.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/React/Views/RCTComponent.h

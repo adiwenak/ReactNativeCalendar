@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.cpp \
-  /Users/akurnadi/Projects/ReactNativeCalendar/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.cpp \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.h
