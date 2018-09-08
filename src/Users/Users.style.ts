@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     backgroundMidle: {
         justifyContent: 'center', 
         alignItems: 'center',
-        margin:0
+        margin:1
     },
 
     colorBlue1: {
