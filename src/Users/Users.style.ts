@@ -25,6 +25,11 @@ export const styles = StyleSheet.create({
         margin: 8,
     },
 
+    buttonUser: {
+        textAlign:"center", 
+        color: 'white',
+    },
+
     alightViewWithPadings: {
         flex: 1, 
         flexDirection: 'row', 

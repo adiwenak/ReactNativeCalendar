@@ -5,42 +5,27 @@ import { connect, Dispatch } from "react-redux"
 import { getAllCoins, HomeActions } from "./home.actions"
 import { Users } from '../Users/Users';
 
-export interface Actions {
-    getCoins: () => void
-}
 
-export interface Props {
-    coins: Coin[],
-    isLoading: boolean
-}
+export class Home extends Component {
 
-export interface HomeProps extends Actions, Props {}
-export function SearchData(){}
+    constructor(props: any){
+        super(props)
+        this.state = { UserSelected : ''}
+    }
 
-export class Home extends Component<HomeProps, any> {
+    selectUser(User: string){
+        this.setState({ userSelected : User})
+    }
+
     render() {
         return (
             <View>
                 <View style={{backgroundColor:'#1111', height: 60}}></View>
                 <Users children={["Bruno", "Adi", "Adam"]} ></Users>
+                <Text>{this.state}</Text>
             </View>
         )
     }
 }
 
-export function mapStateToProps(state: StoreState): Props {
-    const { coins, isLoading} = state.home.ui
-    return {
-        coins,
-        isLoading
-    }
-}
-
-export function mapDispatchToProps(dispatch: Dispatch<StoreState>): Actions {
-    return {
-        getCoins: () => { dispatch(getAllCoins()) }
-    }
-}
-
-export const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(Home)
 
