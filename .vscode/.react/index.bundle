@@ -58785,7 +58785,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
 		return App;
 	}(_react2.Component));
-},489,[109,128,490,518,603],"ReactNativeTS/src/app.tsx");
+},489,[109,128,490,518,599],"ReactNativeTS/src/app.tsx");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73235,10 +73235,19 @@ __d(function (global, require, module, exports, _dependencyMap) {
     var Home = exports.Home = _wrapComponent("Home")(function (_Component) {
         _inherits(Home, _Component);
 
-        function Home() {
+        function Home(props, context) {
             _classCallCheck(this, Home);
 
-            return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+            var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props, context));
+
+            _this.handleDrawer = function () {
+                _this.refs.customUserReference.handleToggle();
+            };
+
+            _this.state = {
+                UserSelected: 'Bruno'
+            };
+            return _this;
         }
 
         _createClass(Home, [{
@@ -73249,7 +73258,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                     {
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 7
+                            lineNumber: 14
                         }
                     },
                     React.createElement(_reactNative.View, {
@@ -73259,23 +73268,361 @@ __d(function (global, require, module, exports, _dependencyMap) {
                         },
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 8
+                            lineNumber: 15
                         }
                     }),
                     React.createElement(_Users.Users, {
+                        ref: "customUserReference",
                         children: ["Bruno", "Adi", "Adam"],
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 9
+                            lineNumber: 16
                         }
-                    })
+                    }),
+                    React.createElement(
+                        _reactNative.Text,
+                        {
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 17
+                            }
+                        },
+                        "Teste: ",
+                        this.refs.customUserReference
+                    )
                 );
             }
         }]);
 
         return Home;
     }(_react2.Component));
-},596,[109,128,12,601],"ReactNativeTS/src/Home/home.tsx");
+},596,[109,128,12,597],"ReactNativeTS/src/Home/home.tsx");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.Users = undefined;
+
+    var _react2 = require(_dependencyMap[0], "react");
+
+    var React = _interopRequireWildcard(_react2);
+
+    var _index = require(_dependencyMap[1], "./../../node_modules/react-transform-hmr/lib/index.js");
+
+    var _index2 = _interopRequireDefault(_index);
+
+    var _jsxFileName = "/Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/src/Users/Users.tsx";
+
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+    var _reactNative = require(_dependencyMap[2], "react-native");
+
+    var _Users = require(_dependencyMap[3], "./Users.style");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    var _components = {
+        Users: {
+            displayName: "Users"
+        }
+    };
+
+    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+        filename: "/Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/src/Users/Users.tsx",
+        components: _components,
+        locals: [module],
+        imports: [React.default]
+    });
+
+    function _wrapComponent(id) {
+        return function (Component) {
+            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+        };
+    }
+
+    var Users = exports.Users = _wrapComponent("Users")(function (_Component) {
+        _inherits(Users, _Component);
+
+        function Users(props) {
+            _classCallCheck(this, Users);
+
+            var _this = _possibleConstructorReturn(this, (Users.__proto__ || Object.getPrototypeOf(Users)).call(this, props));
+
+            _this.handleClose = function () {
+                return _this.setState({
+                    userSelected: 'Bruno'
+                });
+            };
+
+            _this.handleToggle = function () {
+                return _this.setState({
+                    userSelected: 'Bruno2'
+                });
+            };
+
+            _this.state = {
+                userSelected: 'Bruno'
+            };
+            return _this;
+        }
+
+        _createClass(Users, [{
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+
+                return React.createElement(
+                    _reactNative.ScrollView,
+                    {
+                        horizontal: true,
+                        contentContainerStyle: {
+                            flexGrow: 1
+                        },
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 13
+                        }
+                    },
+                    React.createElement(
+                        _reactNative.View,
+                        {
+                            style: _Users.styles.alightViewWithPadings,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 14
+                            }
+                        },
+                        this.props.children.map(function (name) {
+                            return React.createElement(
+                                _reactNative.View,
+                                {
+                                    style: [_Users.styles.backgroundMidle, _Users.styles.colorBlue1],
+                                    __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 16
+                                    }
+                                },
+                                React.createElement(_reactNative.Button, {
+                                    color: "white",
+                                    title: name,
+                                    onPress: function onPress() {
+                                        _this2.setState({
+                                            name: name
+                                        });
+
+                                        _this2.handleToggle = function () {
+                                            return _this2.setState({
+                                                userSelected: name
+                                            });
+                                        };
+                                    },
+                                    __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 17
+                                    }
+                                })
+                            );
+                        })
+                    )
+                );
+            }
+        }]);
+
+        return Users;
+    }(_react2.Component));
+},597,[109,128,12,598],"ReactNativeTS/src/Users/Users.tsx");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.styles = undefined;
+
+    var _reactNative = require(_dependencyMap[0], "react-native");
+
+    var styles = exports.styles = _reactNative.StyleSheet.create({
+        backgroundMidle: {
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: 1
+        },
+        colorBlue1: {
+            backgroundColor: 'powderblue'
+        },
+        colorBlue2: {
+            backgroundColor: 'skyblue'
+        },
+        colorBlue3: {
+            backgroundColor: 'steelblue'
+        },
+        textAlightCenter: {
+            textAlign: "center",
+            margin: 8
+        },
+        buttonUser: {
+            textAlign: "center",
+            color: 'white'
+        },
+        alightViewWithPadings: {
+            flex: 1,
+            flexDirection: 'row',
+            justifyContent: "center",
+            marginHorizontal: 10,
+            marginTop: 10
+        }
+    });
+},598,[12],"ReactNativeTS/src/Users/Users.style.ts");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+    var _redux = require(_dependencyMap[0], "redux");
+
+    var _reduxThunk = require(_dependencyMap[1], "redux-thunk");
+
+    var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
+
+    var _reducer = require(_dependencyMap[2], "../Reducers/reducer");
+
+    var _reducer2 = _interopRequireDefault(_reducer);
+
+    var _request = require(_dependencyMap[3], "../Shared/request");
+
+    var _request2 = _interopRequireDefault(_request);
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    var dependency = _extends({}, _request2.default);
+
+    var thunkMiddleware = _reduxThunk2.default.withExtraArgument(dependency);
+
+    exports.default = (0, _redux.createStore)(_reducer2.default, (0, _redux.applyMiddleware)(thunkMiddleware));
+},599,[501,600,601,606],"ReactNativeTS/src/Store/store.ts");
+__d(function (global, require, module, exports, _dependencyMap) {
+  'use strict';
+
+  exports.__esModule = true;
+
+  function createThunkMiddleware(extraArgument) {
+    return function (_ref) {
+      var dispatch = _ref.dispatch,
+          getState = _ref.getState;
+      return function (next) {
+        return function (action) {
+          if (typeof action === 'function') {
+            return action(dispatch, getState, extraArgument);
+          }
+
+          return next(action);
+        };
+      };
+    };
+  }
+
+  var thunk = createThunkMiddleware();
+  thunk.withExtraArgument = createThunkMiddleware;
+  exports['default'] = thunk;
+},600,[],"redux-thunk/lib/index.js");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _redux = require(_dependencyMap[0], "redux");
+
+    var _home = require(_dependencyMap[1], "../Home/home.reducers");
+
+    var _home2 = _interopRequireDefault(_home);
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    exports.default = (0, _redux.combineReducers)({
+        home: _home2.default
+    });
+},601,[501,602],"ReactNativeTS/src/Reducers/reducer.tsx");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.coins = coins;
+    exports.isLoading = isLoading;
+
+    var _initialState = require(_dependencyMap[0], "../Store/initialState");
+
+    var _initialState2 = _interopRequireDefault(_initialState);
+
+    var _redux = require(_dependencyMap[1], "redux");
+
+    var _home = require(_dependencyMap[2], "./home.actions");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function coins() {
+        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _initialState2.default.home.ui.coins;
+        var action = arguments[1];
+
+        switch (action.type) {
+            case _home.HomeActionsType.GET_COINS:
+                return state;
+
+            case _home.HomeActionsType.RECEIVED_COINS:
+                return action.payload;
+
+            case _home.HomeActionsType.CLEAR_COINS:
+                return [];
+
+            default:
+                return state;
+        }
+    }
+
+    function isLoading() {
+        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _initialState2.default.home.ui.isLoading;
+        var action = arguments[1];
+
+        switch (action.type) {
+            case _home.HomeActionsType.GET_COINS:
+                return true;
+
+            case _home.HomeActionsType.RECEIVED_COINS:
+                return false;
+
+            default:
+                return false;
+        }
+    }
+
+    var reducer = (0, _redux.combineReducers)({
+        isLoading: isLoading,
+        coins: coins
+    });
+    exports.default = reducer;
+},602,[603,501,604],"ReactNativeTS/src/Home/home.reducers.ts");
+__d(function (global, require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    var defaultState = {
+        home: {
+            ui: {
+                isLoading: false,
+                coins: []
+            },
+            data: {}
+        }
+    };
+    exports.default = defaultState;
+},603,[],"ReactNativeTS/src/Store/initialState.ts");
 __d(function (global, require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -73309,7 +73656,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         receivedCoins: receivedCoins,
         clearAllCoins: clearAllCoins
     };
-},608,[609],"ReactNativeTS/src/Home/home.actions.ts");
+},604,[605],"ReactNativeTS/src/Home/home.actions.ts");
 __d(function (global, require, module, exports, _dependencyMap) {
   var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -73453,151 +73800,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       value: !0
     });
   });
-},609,[],"typesafe-actions/dist/index.umd.js");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-
-    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-    var _redux = require(_dependencyMap[0], "redux");
-
-    var _reduxThunk = require(_dependencyMap[1], "redux-thunk");
-
-    var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
-
-    var _reducer = require(_dependencyMap[2], "../Reducers/reducer");
-
-    var _reducer2 = _interopRequireDefault(_reducer);
-
-    var _request = require(_dependencyMap[3], "../Shared/request");
-
-    var _request2 = _interopRequireDefault(_request);
-
-    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-    var dependency = _extends({}, _request2.default);
-
-    var thunkMiddleware = _reduxThunk2.default.withExtraArgument(dependency);
-
-    exports.default = (0, _redux.createStore)(_reducer2.default, (0, _redux.applyMiddleware)(thunkMiddleware));
-},603,[501,604,605,610],"ReactNativeTS/src/Store/store.ts");
-__d(function (global, require, module, exports, _dependencyMap) {
-  'use strict';
-
-  exports.__esModule = true;
-
-  function createThunkMiddleware(extraArgument) {
-    return function (_ref) {
-      var dispatch = _ref.dispatch,
-          getState = _ref.getState;
-      return function (next) {
-        return function (action) {
-          if (typeof action === 'function') {
-            return action(dispatch, getState, extraArgument);
-          }
-
-          return next(action);
-        };
-      };
-    };
-  }
-
-  var thunk = createThunkMiddleware();
-  thunk.withExtraArgument = createThunkMiddleware;
-  exports['default'] = thunk;
-},604,[],"redux-thunk/lib/index.js");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-
-    var _redux = require(_dependencyMap[0], "redux");
-
-    var _home = require(_dependencyMap[1], "../Home/home.reducers");
-
-    var _home2 = _interopRequireDefault(_home);
-
-    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-    exports.default = (0, _redux.combineReducers)({
-        home: _home2.default
-    });
-},605,[501,606],"ReactNativeTS/src/Reducers/reducer.tsx");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.coins = coins;
-    exports.isLoading = isLoading;
-
-    var _initialState = require(_dependencyMap[0], "../Store/initialState");
-
-    var _initialState2 = _interopRequireDefault(_initialState);
-
-    var _redux = require(_dependencyMap[1], "redux");
-
-    var _home = require(_dependencyMap[2], "./home.actions");
-
-    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-    function coins() {
-        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _initialState2.default.home.ui.coins;
-        var action = arguments[1];
-
-        switch (action.type) {
-            case _home.HomeActionsType.GET_COINS:
-                return state;
-
-            case _home.HomeActionsType.RECEIVED_COINS:
-                return action.payload;
-
-            case _home.HomeActionsType.CLEAR_COINS:
-                return [];
-
-            default:
-                return state;
-        }
-    }
-
-    function isLoading() {
-        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _initialState2.default.home.ui.isLoading;
-        var action = arguments[1];
-
-        switch (action.type) {
-            case _home.HomeActionsType.GET_COINS:
-                return true;
-
-            case _home.HomeActionsType.RECEIVED_COINS:
-                return false;
-
-            default:
-                return false;
-        }
-    }
-
-    var reducer = (0, _redux.combineReducers)({
-        isLoading: isLoading,
-        coins: coins
-    });
-    exports.default = reducer;
-},606,[607,501,608],"ReactNativeTS/src/Home/home.reducers.ts");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    var defaultState = {
-        home: {
-            ui: {
-                isLoading: false,
-                coins: []
-            },
-            data: {}
-        }
-    };
-    exports.default = defaultState;
-},607,[],"ReactNativeTS/src/Store/initialState.ts");
+},605,[],"typesafe-actions/dist/index.umd.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -73658,10 +73861,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
         cmcAPI: cmcAPI
     };
     exports.default = allAPI;
-},610,[611,637,638],"ReactNativeTS/src/Shared/request.ts");
+},606,[607,633,634],"ReactNativeTS/src/Shared/request.ts");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = require(_dependencyMap[0], './lib/axios');
-},611,[612],"axios/index.js");
+},607,[608],"axios/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73699,7 +73902,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   axios.spread = require(_dependencyMap[7], './helpers/spread');
   module.exports = axios;
   module.exports.default = axios;
-},612,[613,614,616,617,634,635,631,636],"axios/lib/axios.js");
+},608,[609,610,612,613,630,631,627,632],"axios/lib/axios.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73858,7 +74061,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     extend: extend,
     trim: trim
   };
-},613,[614,615],"axios/lib/utils.js");
+},609,[610,611],"axios/lib/utils.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73873,7 +74076,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return fn.apply(thisArg, args);
     };
   };
-},614,[],"axios/lib/helpers/bind.js");
+},610,[],"axios/lib/helpers/bind.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   /*!
    * Determine if an object is a Buffer
@@ -73891,7 +74094,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   function isSlowBuffer(obj) {
     return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
   }
-},615,[],"is-buffer/index.js");
+},611,[],"is-buffer/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73956,7 +74159,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     };
   });
   module.exports = Axios;
-},616,[617,613,628,629],"axios/lib/core/Axios.js");
+},612,[613,609,624,625],"axios/lib/core/Axios.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74040,7 +74243,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
   });
   module.exports = defaults;
-},617,[613,618,619,619],"axios/lib/defaults.js");
+},613,[609,614,615,615],"axios/lib/defaults.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74054,7 +74257,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       }
     });
   };
-},618,[613],"axios/lib/helpers/normalizeHeaderName.js");
+},614,[609],"axios/lib/helpers/normalizeHeaderName.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74198,7 +74401,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       request.send(requestData);
     });
   };
-},619,[613,620,623,624,625,621,626,627],"axios/lib/adapters/xhr.js");
+},615,[609,616,619,620,621,617,622,623],"axios/lib/adapters/xhr.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74213,7 +74416,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
     }
   };
-},620,[621],"axios/lib/core/settle.js");
+},616,[617],"axios/lib/core/settle.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74223,7 +74426,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     var error = new Error(message);
     return enhanceError(error, config, code, request, response);
   };
-},621,[622],"axios/lib/core/createError.js");
+},617,[618],"axios/lib/core/createError.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74238,7 +74441,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     error.response = response;
     return error;
   };
-},622,[],"axios/lib/core/enhanceError.js");
+},618,[],"axios/lib/core/enhanceError.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74291,7 +74494,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return url;
   };
-},623,[613],"axios/lib/helpers/buildURL.js");
+},619,[609],"axios/lib/helpers/buildURL.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74328,7 +74531,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     });
     return parsed;
   };
-},624,[613],"axios/lib/helpers/parseHeaders.js");
+},620,[609],"axios/lib/helpers/parseHeaders.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74370,7 +74573,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return true;
     };
   }();
-},625,[613],"axios/lib/helpers/isURLSameOrigin.js");
+},621,[609],"axios/lib/helpers/isURLSameOrigin.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74402,7 +74605,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = btoa;
-},626,[],"axios/lib/helpers/btoa.js");
+},622,[],"axios/lib/helpers/btoa.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74449,7 +74652,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       remove: function remove() {}
     };
   }();
-},627,[613],"axios/lib/helpers/cookies.js");
+},623,[609],"axios/lib/helpers/cookies.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74482,7 +74685,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = InterceptorManager;
-},628,[613],"axios/lib/core/InterceptorManager.js");
+},624,[609],"axios/lib/core/InterceptorManager.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74534,7 +74737,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return Promise.reject(reason);
     });
   };
-},629,[613,630,631,617,632,633],"axios/lib/core/dispatchRequest.js");
+},625,[609,626,627,613,628,629],"axios/lib/core/dispatchRequest.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74546,14 +74749,14 @@ __d(function (global, require, module, exports, _dependencyMap) {
     });
     return data;
   };
-},630,[613],"axios/lib/core/transformData.js");
+},626,[609],"axios/lib/core/transformData.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = function isCancel(value) {
     return !!(value && value.__CANCEL__);
   };
-},631,[],"axios/lib/cancel/isCancel.js");
+},627,[],"axios/lib/cancel/isCancel.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74561,14 +74764,14 @@ __d(function (global, require, module, exports, _dependencyMap) {
     return (/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
     );
   };
-},632,[],"axios/lib/helpers/isAbsoluteURL.js");
+},628,[],"axios/lib/helpers/isAbsoluteURL.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = function combineURLs(baseURL, relativeURL) {
     return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
   };
-},633,[],"axios/lib/helpers/combineURLs.js");
+},629,[],"axios/lib/helpers/combineURLs.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74582,7 +74785,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   Cancel.prototype.__CANCEL__ = true;
   module.exports = Cancel;
-},634,[],"axios/lib/cancel/Cancel.js");
+},630,[],"axios/lib/cancel/Cancel.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74626,7 +74829,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = CancelToken;
-},635,[634],"axios/lib/cancel/CancelToken.js");
+},631,[630],"axios/lib/cancel/CancelToken.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -74635,13 +74838,13 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return callback.apply(null, arr);
     };
   };
-},636,[],"axios/lib/helpers/spread.js");
+},632,[],"axios/lib/helpers/spread.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
   var cmcBaseURL = exports.cmcBaseURL = "https://api.coinmarketcap.com/v1/ticker/";
-},637,[],"ReactNativeTS/src/Shared/request.constants.ts");
+},633,[],"ReactNativeTS/src/Shared/request.constants.ts");
 __d(function (global, require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -74672,186 +74875,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
         return RequestConfig;
     }();
-},638,[],"ReactNativeTS/src/Shared/requestConfig.ts");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.Users = undefined;
-
-    var _react2 = require(_dependencyMap[0], "react");
-
-    var React = _interopRequireWildcard(_react2);
-
-    var _index = require(_dependencyMap[1], "./../../node_modules/react-transform-hmr/lib/index.js");
-
-    var _index2 = _interopRequireDefault(_index);
-
-    var _jsxFileName = "/Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/src/Users/Users.tsx";
-
-    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-    var _reactNative = require(_dependencyMap[2], "react-native");
-
-    var _Users = require(_dependencyMap[3], "./Users.style");
-
-    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-    function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-    var _components = {
-        Users: {
-            displayName: "Users"
-        }
-    };
-
-    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
-        filename: "/Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendar/src/Users/Users.tsx",
-        components: _components,
-        locals: [module],
-        imports: [React.default]
-    });
-
-    function _wrapComponent(id) {
-        return function (Component) {
-            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
-        };
-    }
-
-    var Users = exports.Users = _wrapComponent("Users")(function (_Component) {
-        _inherits(Users, _Component);
-
-        function Users(props) {
-            _classCallCheck(this, Users);
-
-            var _this = _possibleConstructorReturn(this, (Users.__proto__ || Object.getPrototypeOf(Users)).call(this, props));
-
-            _this.state = {
-                userSelected: ''
-            };
-            return _this;
-        }
-
-        _createClass(Users, [{
-            key: "selectUser",
-            value: function selectUser(btn) {
-                this.setState({
-                    userSelected: btn
-                });
-            }
-        }, {
-            key: "render",
-            value: function render() {
-                var _this2 = this;
-
-                return React.createElement(
-                    _reactNative.ScrollView,
-                    {
-                        horizontal: true,
-                        contentContainerStyle: {
-                            flexGrow: 1
-                        },
-                        __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 14
-                        }
-                    },
-                    React.createElement(
-                        _reactNative.View,
-                        {
-                            style: _Users.styles.alightViewWithPadings,
-                            __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 15
-                            }
-                        },
-                        this.props.children.map(function (name) {
-                            return React.createElement(
-                                _reactNative.View,
-                                {
-                                    style: [_Users.styles.backgroundMidle, _Users.styles.colorBlue1],
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 17
-                                    }
-                                },
-                                React.createElement(_reactNative.Button, {
-                                    color: "white",
-                                    title: name,
-                                    onPress: function onPress() {
-                                        _this2.selectUser(name);
-                                    },
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 18
-                                    }
-                                })
-                            );
-                        })
-                    ),
-                    React.createElement(
-                        _reactNative.Text,
-                        {
-                            __source: {
-                                fileName: _jsxFileName,
-                                lineNumber: 23
-                            }
-                        },
-                        this.state.userSelected
-                    )
-                );
-            }
-        }]);
-
-        return Users;
-    }(_react2.Component));
-},601,[109,128,12,602],"ReactNativeTS/src/Users/Users.tsx");
-__d(function (global, require, module, exports, _dependencyMap) {
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-    exports.styles = undefined;
-
-    var _reactNative = require(_dependencyMap[0], "react-native");
-
-    var styles = exports.styles = _reactNative.StyleSheet.create({
-        backgroundMidle: {
-            justifyContent: 'center',
-            alignItems: 'center',
-            margin: 1
-        },
-        colorBlue1: {
-            backgroundColor: 'powderblue'
-        },
-        colorBlue2: {
-            backgroundColor: 'skyblue'
-        },
-        colorBlue3: {
-            backgroundColor: 'steelblue'
-        },
-        textAlightCenter: {
-            textAlign: "center",
-            margin: 8
-        },
-        buttonUser: {
-            textAlign: "center",
-            color: 'white'
-        },
-        alightViewWithPadings: {
-            flex: 1,
-            flexDirection: 'row',
-            justifyContent: "center",
-            marginHorizontal: 10,
-            marginTop: 10
-        }
-    });
-},602,[12],"ReactNativeTS/src/Users/Users.style.ts");
+},634,[],"ReactNativeTS/src/Shared/requestConfig.ts");
 require(23);
 require(11);
 //# sourceMappingURL=index.map

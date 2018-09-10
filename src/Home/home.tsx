@@ -8,21 +8,22 @@ import { Users } from '../Users/Users';
 
 export class Home extends Component {
 
-    constructor(props: any){
-        super(props)
-        this.state = { UserSelected : ''}
+    constructor(props: any, context: any){
+        super(props, context)
+        this.state = { UserSelected : 'Bruno'}
     }
 
-    selectUser(User: string){
-        this.setState({ userSelected : User})
+    handleDrawer = () => {
+        // Access the handleToggle function of the drawer reference
+        this.refs.customUserReference.handleToggle()
     }
 
     render() {
         return (
             <View>
                 <View style={{backgroundColor:'#1111', height: 60}}></View>
-                <Users children={["Bruno", "Adi", "Adam"]} ></Users>
-                <Text>{this.state}</Text>
+                <Users ref="customUserReference" children={["Bruno", "Adi", "Adam"]} ></Users>
+                <Text>Teste: {this.refs.customUserReference}</Text>
             </View>
         )
     }
