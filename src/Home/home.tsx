@@ -9,7 +9,7 @@ interface ComponentState {
 }
 
 interface ComponentProps {
-    userCollection: string
+    userCollection: ["Bruno", "Adi", "Adam"]
 }
 
 export class Home extends Component<ComponentProps, ComponentState> {
@@ -17,16 +17,18 @@ export class Home extends Component<ComponentProps, ComponentState> {
     constructor(props: any, context: any){
         super(props, context)
         this.state = {
-            userSelected : [""]
+            userSelected : []
         }
     }
 
-    handleDrawer = () => {
-        // Access the handleToggle function of the drawer reference
-    }
-
-    userChangeEvent = (lsUsers: string[]) => {
-        this.setState({userSelected: lsUsers})
+    userChangeEvent = (users: string) => {
+        const index = this.state.userSelected.indexOf(users, 0);
+        if (index > -1){
+            this.setState({userSelected: this.state.userSelected.filter(x => x !== users)})    
+        }else{
+            this.setState({userSelected: this.state.userSelected.concat(users)})
+        }
+        
     }
 
     render() {
