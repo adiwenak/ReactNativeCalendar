@@ -3,14 +3,11 @@ import { Component } from "react"
 import * as React from "react"
 import { Text, View, ScrollView, StyleSheet, Button } from "react-native"
 import { styles } from './Users.style'
-// import { UserModel } from './user.model';
+import { UserModel } from './UserModel';
 
 interface ComponentProps {
-    userCollection: string[]
-    userChangeEvent: (lsSelectedUser: string) => void
-
-    // userCollection: UserModel[]
-    // userChangeEvent: (lsSelectedUser: UserModel) => void
+    userCollection: UserModel[]
+    userChangeEvent: (lsSelectedUser: UserModel) => void
 }
 
 export class Users extends Component<ComponentProps>
@@ -20,30 +17,23 @@ export class Users extends Component<ComponentProps>
         this.state = { userSelected : []}
     }
 
-    handleUserChange = (user: string) => {
+    handleUserChange = (user: UserModel) => {
+        user.pressStatus = !user.pressStatus
         this.props.userChangeEvent(user)
-        // this.props.userChangeEvent(user)
     }
     
     renderButtons() {
         if (this.props.userCollection){
-            return this.props.userCollection!.map((name:string) => {
-                return  <View style={[styles.backgroundMidle, styles.colorBlue1]}> 
+            return this.props.userCollection!.map(x => {
+                return  <View style={[styles.backgroundMidle]}> 
+                            <View style={{backgroundColor:x.pressStatus ? x.colour : 'white'}}>
                             <Button 
-                                color='white' 
-                                title={name} 
-                                onPress={() => { this.handleUserChange(name)}} />
+                                    color={x.pressStatus ? 'white' : 'black'} 
+                                    title={x.name} 
+                                    onPress={() => { this.handleUserChange(x)}} />
+                            </View>
                         </View>
             })
-
-            // return this.props.userCollection!.map(x => {
-            //     return  <View style={[styles.backgroundMidle, styles.colorBlue1]}> 
-            //                 <Button 
-            //                     color='white' 
-            //                     title={x.name} 
-            //                     onPress={() => { this.handleUserChange(x)}} />
-            //             </View>
-            // })
         }
         return
     }

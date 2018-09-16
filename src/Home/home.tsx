@@ -2,14 +2,18 @@ import { Component } from "react"
 import * as React from "react"
 import { Text, View, ScrollView, StyleSheet } from "react-native"
 import { getAllCoins, HomeActions } from "./home.actions"
+import { UserModel } from '../UsersView/UserModel';
 import { Users } from '../UsersView/Users';
+import { styles } from '../UsersView/Users.style';
+import { any } from 'prop-types';
 
 interface ComponentState {
-    userSelected: string[]
+    userSelected: UserModel[]
+    listUsers: UserModel[]
 }
 
 interface ComponentProps {
-    userCollection: ["Bruno", "Adi", "Adam"]
+    
 }
 
 export class Home extends Component<ComponentProps, ComponentState> {
@@ -17,26 +21,33 @@ export class Home extends Component<ComponentProps, ComponentState> {
     constructor(props: any, context: any){
         super(props, context)
         this.state = {
-            userSelected : []
+            userSelected : [],
+            listUsers : [new UserModel("Bruno", "powderblue", true), 
+                         new UserModel("Adi", "skyblue", true), 
+                         new UserModel("Adam", "steelblue", true)]
         }
     }
 
-    userChangeEvent = (users: string) => {
-        const index = this.state.userSelected.indexOf(users, 0);
-        if (index > -1){
-            this.setState({userSelected: this.state.userSelected.filter(x => x !== users)})    
+    userChangeEvent = (users: UserModel) => {
+        var containUser = false
+        this.state.userSelected.forEach(x => {
+            if(x.name.trim == users.name.trim){
+                containUser = true
+            }
+        });
+        if (containUser){
+            this.setState({userSelected: this.state.userSelected.filter(x => x.name !== users.name)})    
         }else{
             this.setState({userSelected: this.state.userSelected.concat(users)})
         }
-        
     }
 
     render() {
         return (
             <View>
                 <View style={{backgroundColor:'#1111', height: 60}}></View>
-                <Users userCollection={["Bruno", "Adi", "Adam"]} userChangeEvent={this.userChangeEvent}/>
-                <Text>Teste: {this.state.userSelected}</Text>    
+                <Users  userCollection={this.state.listUsers} 
+                        userChangeEvent={this.userChangeEvent}/>
             </View>
         )
     }
