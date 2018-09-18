@@ -1,4 +1,3 @@
-import { Moment } from "moment"
 import moment from "moment"
 import * as React from "react"
 import { Component } from "react"
@@ -21,37 +20,63 @@ enum MonthAsString {
     December = "December"
 }
 
-interface Props {
+export interface MonthSelectionProps {
     onMonthChange?: (month: Month, year: number) => void
     currentYear?: number
+    currentMonth?: Month
 }
 
-interface State {
+export interface MonthSelectionState {
     currentMonth: Month
     currentYear: number
 }
 
-export class MonthSelection extends Component<Props, State> {
+export class MonthSelection extends Component<MonthSelectionProps, MonthSelectionState> {
     private allMonths: MonthAsString[] = [MonthAsString.January, MonthAsString.February,
         MonthAsString.March, MonthAsString.April, MonthAsString.May,
         MonthAsString.June, MonthAsString.July, MonthAsString.August,
         MonthAsString.September, MonthAsString.October, MonthAsString.November, MonthAsString.December]
 
-    constructor(props: Props) {
+    constructor(props: MonthSelectionProps) {
         super(props)
         this.state = {
-            currentMonth: Month.January,
+            currentMonth: props.currentMonth || Month.January,
             currentYear: props.currentYear || moment().year()
         }
     }
 
-    onMonthChange = (month: Month, year: number) => {
+    render() {
+        const title = `${this.allMonths[this.state.currentMonth]} ${this.state.currentYear}`
+        return(
+            <View style={styles.container}>
+                <TouchableHighlight
+                    onPress={this.handlePreviousButtonPress}
+                    accessibilityLabel={"button-month-prev"}
+                    style={styles.containerButton}
+                >
+                    <Image source={require("./asset/arrow-back.png")} resizeMode={"center"}/>
+                </TouchableHighlight>
+                <View style={styles.containerTitle}>
+                    <Text style={styles.title}>{title}</Text>
+                </View>
+                <TouchableHighlight
+                    onPress={this.handleNextButtonPress}
+                    style={styles.containerButton}
+                    accessibilityLabel={"button-month-next"}
+                >
+                    <Image source={require("./asset/arrow-forward.png")} resizeMode={"center"}/>
+                </TouchableHighlight>
+            </View >
+        )
+    }
+
+    private onMonthChange = (month: Month, year: number) => {
         if (this.props.onMonthChange) {
             this.props.onMonthChange(month, year)
         }
     }
 
-    handlePreviousButtonPress = () => {
+    private handlePreviousButtonPress = () => {
         let { currentMonth, currentYear } = this.state
         if (currentMonth > 0) {
             currentMonth -= 1
@@ -68,7 +93,7 @@ export class MonthSelection extends Component<Props, State> {
         this.onMonthChange(currentMonth, currentYear)
     }
 
-    handleNextButtonPress = () => {
+    private handleNextButtonPress = () => {
         let { currentMonth, currentYear } = this.state
         if (currentMonth < this.allMonths.length - 1) {
             currentMonth += 1
@@ -83,27 +108,5 @@ export class MonthSelection extends Component<Props, State> {
         })
 
         this.onMonthChange(currentMonth, currentYear)
-    }
-
-    render() {
-        const title = `${this.allMonths[this.state.currentMonth]} ${this.state.currentYear}`
-        return(
-            <View style={styles.container}>
-                <TouchableHighlight
-                    onPress={this.handlePreviousButtonPress}
-                    style={styles.containerButton}
-                >
-                    <Image source={require("./asset/arrow-back.png")} resizeMode={"center"}/>
-                </TouchableHighlight>
-                <View style={styles.containerTitle}>
-                    <Text style={styles.title}>{title}</Text>
-                </View>
-                <TouchableHighlight
-                    onPress={this.handleNextButtonPress}
-                    style={styles.containerButton}>
-                    <Image source={require("./asset/arrow-forward.png")} resizeMode={"center"}/>
-                </TouchableHighlight>
-            </View >
-        )
     }
 }

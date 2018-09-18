@@ -17,17 +17,21 @@
         "tslib": "^1.9.0"
     },
     "devDependencies": {
+        "@types/enzyme": "^3.1.14",
         "@types/jest": "^22.1.1",
-        "@types/react-test-renderer": "^16.0.0",
+        "@types/react-test-renderer": "^16.0.2",
         "babel-core": "^6.0.0",
         "babel-jest": "^22.1.0",
         "babel-preset-react-native": "^4.0.0",
+        "enzyme": "^3.6.0",
+        "enzyme-adapter-react-16": "^1.5.0",
         "gulp": "^3.9.1",
         "gulp-tslint": "^8.1.2",
         "jest": "22.4.0",
         "jest-react-native": "^18.0.0",
+        "react-dom": "^16.5.1",
         "react-native-typescript-transformer": "^1.2.3",
-        "react-test-renderer": "^16.2.0",
+        "react-test-renderer": "^16.5.1",
         "require-dir": "^0.3.2",
         "ts-jest": "^22.4.6",
         "tslint": "^5.9.1",
@@ -45,10 +49,22 @@
             "^.+\\.tsx?$": "ts-jest"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "setupFiles": [
+            "./config/jest.setup.js"
+        ],
         "moduleFileExtensions": [
             "ts",
             "tsx",
             "js"
-        ]
+        ],
+        "collectCoverage": true,
+        "coverageDirectory": "./testReport",
+        "coverageThreshold": {
+            "global": {
+              "branches": 80,
+              "functions": 80,
+              "lines": 80
+            }
+        }
     }
 }
