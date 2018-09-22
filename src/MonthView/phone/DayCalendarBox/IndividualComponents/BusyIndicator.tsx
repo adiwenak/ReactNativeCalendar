@@ -1,6 +1,6 @@
 import * as React from "react"
 import { View } from "react-native"
-import styles from "../DayCalendarBox.style"
+import styles from "./BusyIndicator.style"
 
 export interface Indicator {
     name: string
@@ -24,7 +24,7 @@ export const BusyIndicator = (props: BusyIndicatorProps): JSX.Element => {
                 paddingHorizontal: busyIndicatorPadding
             }
         ]}>
-            {props.whosBusy ? props.whosBusy.map((obj: Indicator) =>
+            {props.whosBusy.map((obj: Indicator) =>
                     <View
                         key={obj.color}
                         style={{
@@ -34,7 +34,7 @@ export const BusyIndicator = (props: BusyIndicatorProps): JSX.Element => {
                             backgroundColor: obj.color
                         }}
                     />
-                ) : null
+                )
             }
         </View>
     )

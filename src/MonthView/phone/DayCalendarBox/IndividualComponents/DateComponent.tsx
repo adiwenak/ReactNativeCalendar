@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Text, View } from "react-native"
-import styles from "../DayCalendarBox.style"
+import styles from "./DateComponent.style"
 
 interface DateComponentProps {
     day: string

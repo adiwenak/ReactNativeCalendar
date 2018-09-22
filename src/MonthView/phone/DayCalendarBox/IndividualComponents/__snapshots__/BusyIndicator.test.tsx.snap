@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BusyIndicator /> should render with given props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+      },
+      Object {
+        "height": 10,
+        "paddingHorizontal": 3.3333333333333335,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "green",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "red",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "pink",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "black",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "grey",
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "width": 5.882352941176471,
+      }
+    }
+  />
+</View>
+`;

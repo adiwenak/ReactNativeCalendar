@@ -9,7 +9,7 @@ interface ComponentProps {
     day: string
     isSelected: boolean
     whosBusy: Indicator[]
-    dayBoxOnPressHandler: (hello: string) => void
+    dayBoxOnPressHandler: (day: string) => void
     boxHeight: number
     dateFontSize: number
 }
@@ -18,13 +18,14 @@ export class DayCalendarBox extends Component<ComponentProps> {
     private dateComponentHeight = this.props.boxHeight * 0.7
     private busyIndicatorHeight = this.props.boxHeight * 0.3
 
-    handleOnPress = () => {
+    public handleOnPress = () => {
         this.props.dayBoxOnPressHandler(this.props.day)
     }
 
     public render() {
         return (
             <TouchableOpacity
+                testID={"dayBoxOnPress"}
                 style={[styles.touchableContainer, {height: this.props.boxHeight, width: this.props.boxHeight}]}
                 onPress={this.handleOnPress}
             >
