@@ -21,6 +21,8 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/CxxBridge/RCTCxxBridgeDelegate.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/CxxModule/RCTCxxModule.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/CxxModule/RCTCxxUtils.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSCExecutor.h \
@@ -400,8 +402,6 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Exception.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/portability/Windows.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/Value.h \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/Unicode.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/noncopyable.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/privatedata/PrivateDataBase.h \

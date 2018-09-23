@@ -11,4 +11,5 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Modules/RCTAccessibilityManager.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTAssert.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/UIUtils/RCTUIUtils.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTUtils.h

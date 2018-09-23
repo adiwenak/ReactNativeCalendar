@@ -40,4 +40,5 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTPropsAnimatedNode.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTSpringAnimation.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTStyleAnimatedNode.h \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTrackingAnimatedNode.h

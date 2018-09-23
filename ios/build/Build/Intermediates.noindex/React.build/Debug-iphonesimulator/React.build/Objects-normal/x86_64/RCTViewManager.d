@@ -23,6 +23,7 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/UIView+React.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTComponent.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTLayout.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTRootView.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Modules/RCTUIManager.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \

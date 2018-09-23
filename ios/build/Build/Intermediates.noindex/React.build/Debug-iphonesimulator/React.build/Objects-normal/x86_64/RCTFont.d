@@ -1,12 +1,12 @@
 dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTFont.mm \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTAssert.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTDefines.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTFont.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTConvert.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTAnimationType.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTDefines.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTLog.h \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTAssert.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Base/RCTUtils.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \

@@ -1,6 +1,6 @@
 dependencies: \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Text/RCTTextSelection.m \
-  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Text/RCTTextSelection.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.m \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \

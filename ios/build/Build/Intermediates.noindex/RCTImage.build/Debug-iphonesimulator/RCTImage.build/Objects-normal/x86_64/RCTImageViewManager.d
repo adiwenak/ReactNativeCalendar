@@ -29,5 +29,6 @@ dependencies: \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Volumes/Bruno/Dropbox/Dropbox/Desenvolvimento/ReactNativeCalendarAdi/node_modules/react-native/Libraries/Image/RCTImageView.h
