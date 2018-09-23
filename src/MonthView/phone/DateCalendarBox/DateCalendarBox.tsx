@@ -1,41 +1,40 @@
 import * as React from "react"
 import { Component } from "react"
-import { ActivityIndicator, Dimensions, ImageBackground, Text, TouchableOpacity, View } from "react-native"
-import styles from "./DayCalendarBox.style"
+import { TouchableOpacity } from "react-native"
+import styles from "./DateCalendarBox.style"
 
-import { BusyIndicator, BusyIndicatorProps, DateComponent, Indicator } from "./IndividualComponents"
+import { BusyIndicator, BusyIndicatorObj, DateComponent } from "./IndividualComponents"
 
 interface ComponentProps {
-    day: string
+    date: string
     isSelected: boolean
-    whosBusy: Indicator[]
-    dayBoxOnPressHandler: (day: string) => void
+    whosBusy: BusyIndicatorObj[]
+    dateBoxOnPressHandler: (date: string) => void
     boxHeight: number
     dateFontSize: number
 }
 
-export class DayCalendarBox extends Component<ComponentProps> {
+export class DateCalendarBox extends Component<ComponentProps> {
     private dateComponentHeight = this.props.boxHeight * 0.7
     private busyIndicatorHeight = this.props.boxHeight * 0.3
 
     public handleOnPress = () => {
-        this.props.dayBoxOnPressHandler(this.props.day)
+        this.props.dateBoxOnPressHandler(this.props.date)
     }
 
     public render() {
         return (
             <TouchableOpacity
-                testID={"dayBoxOnPress"}
                 style={[styles.touchableContainer, {height: this.props.boxHeight, width: this.props.boxHeight}]}
                 onPress={this.handleOnPress}
             >
                 <DateComponent
-                    day={this.props.day}
+                    date={this.props.date}
                     isSelected={this.props.isSelected}
                     dateFontSize={this.props.dateFontSize}
                     dateComponentHeight={this.dateComponentHeight}
                 />
-                <BusyIndicator whosBusy={this.props.whosBusy} busyIndicatorHeight={this.busyIndicatorHeight}/>
+                <BusyIndicator whosBusy={this.props.whosBusy} height={this.busyIndicatorHeight}/>
             </TouchableOpacity>
         )
     }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DayCalendarBox /> should render with given props 1`] = `
+exports[`<DateCalendarBox /> should render with given props 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -29,7 +29,7 @@ exports[`<DayCalendarBox /> should render with given props 1`] = `
       "width": 50,
     }
   }
-  testID="dayBoxOnPress"
+  testID={undefined}
   tvParallaxProperties={undefined}
 >
   <View

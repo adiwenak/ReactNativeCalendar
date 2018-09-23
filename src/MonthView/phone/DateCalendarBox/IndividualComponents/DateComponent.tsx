@@ -3,7 +3,7 @@ import { Text, View } from "react-native"
 import styles from "./DateComponent.style"
 
 interface DateComponentProps {
-    day: string
+    date: string
     isSelected: boolean
     dateFontSize: number
     dateComponentHeight: number
@@ -21,13 +21,13 @@ export const DateComponent = (props: DateComponentProps) => {
                 ]}>
                     <View style={styles.circleView}>
                         <Text style={[styles.textStyle, {fontSize: props.dateFontSize}]}>
-                            {props.day}
+                            {props.date}
                         </Text>
                     </View>
                 </View>
                 ) : (
                 <Text style={[styles.textStyle, {fontSize: props.dateFontSize}]}>
-                    {props.day}
+                    {props.date}
                 </Text>
             )}
         </View>

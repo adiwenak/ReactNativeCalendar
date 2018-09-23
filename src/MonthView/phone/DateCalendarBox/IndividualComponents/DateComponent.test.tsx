@@ -9,7 +9,7 @@ describe("<DateComponent />", () => {
     it("should render with given props when isSelected is true", () => {
         const component = create(
             <DateComponent
-                day={"1"}
+                date={"1"}
                 isSelected={true}
                 dateFontSize={16}
                 dateComponentHeight={50}
@@ -19,7 +19,7 @@ describe("<DateComponent />", () => {
     it("should render with given props when isSelected is false", () => {
         const component = create(
             <DateComponent
-                day={"1"}
+                date={"1"}
                 isSelected={false}
                 dateFontSize={16}
                 dateComponentHeight={50}

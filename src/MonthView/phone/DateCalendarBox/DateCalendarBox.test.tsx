@@ -1,10 +1,9 @@
 import { shallow } from "enzyme"
 import * as React from "react"
-import { TouchableOpacity } from "react-native"
 import { create } from "react-test-renderer"
-import { DayCalendarBox } from "./DayCalendarBox"
+import { DateCalendarBox } from "./DateCalendarBox"
 
-describe("<DayCalendarBox />", () => {
+describe("<DateCalendarBox />", () => {
     const weBusy = [
         {name: "Adam", color: "blue"},
         {name: "Adi", color: "green"},
@@ -17,11 +16,11 @@ describe("<DayCalendarBox />", () => {
 
     it("should render with given props", () => {
         const component = create(
-            <DayCalendarBox
-                day={"1"}
+            <DateCalendarBox
+                date={"1"}
                 isSelected={true}
                 whosBusy={weBusy}
-                dayBoxOnPressHandler={onPressHandlerMock}
+                dateBoxOnPressHandler={onPressHandlerMock}
                 boxHeight={50}
                 dateFontSize={16}
             />).toJSON()
@@ -31,11 +30,11 @@ describe("<DayCalendarBox />", () => {
     it("should call onPressHandler when component is pressed", () => {
 
         const component = shallow(
-            <DayCalendarBox
-                day={"1"}
+            <DateCalendarBox
+                date={"1"}
                 isSelected={true}
                 whosBusy={weBusy}
-                dayBoxOnPressHandler={onPressHandlerMock}
+                dateBoxOnPressHandler={onPressHandlerMock}
                 boxHeight={50}
                 dateFontSize={16}
             />

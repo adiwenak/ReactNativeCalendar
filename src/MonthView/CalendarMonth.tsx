@@ -1,9 +1,13 @@
 import * as React from "react"
 import { Component } from "react"
 import { View } from "react-native"
-import { DayCalendarBox } from "./phone/DayCalendarBox"
+import { DateCalendarBox } from "./phone/DateCalendarBox"
 
 interface ComponentProps {}
+
+interface ComponentState {
+    dateSelected: string
+}
 
 const weBusy = [
     {name: "Adam", color: "blue"},
@@ -14,7 +18,7 @@ const weBusy = [
     {name: "Olivia", color: "grey"}
 ]
 
-export class MonthView extends Component<ComponentProps, any> {
+export class CalendarMonth extends Component<ComponentProps, ComponentState> {
 
     constructor(props: ComponentProps) {
         super(props)
@@ -23,18 +27,18 @@ export class MonthView extends Component<ComponentProps, any> {
         }
     }
 
-    public dayBoxOnPressHandler = (day: string) => {
-        this.setState({ dateSelected: day })
+    public dateBoxOnPressHandler = (date: string) => {
+        this.setState({ dateSelected: date })
     }
 
     public render() {
         return (
             <View>
-                <DayCalendarBox
-                    day={"31"}
+                <DateCalendarBox
+                    date={"31"}
                     isSelected={true}
                     whosBusy={weBusy}
-                    dayBoxOnPressHandler={this.dayBoxOnPressHandler}
+                    dateBoxOnPressHandler={this.dateBoxOnPressHandler}
                     boxHeight={40}
                     dateFontSize={13}
                 />
