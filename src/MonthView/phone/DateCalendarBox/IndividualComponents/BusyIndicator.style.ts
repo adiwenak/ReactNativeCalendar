@@ -1,6 +1,10 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, ViewStyle } from "react-native"
 
-export default StyleSheet.create({
+interface Style {
+    bottomOuterView: ViewStyle
+}
+
+export default StyleSheet.create<Style>({
     bottomOuterView: {
         flex: 1,
         justifyContent: "space-around",

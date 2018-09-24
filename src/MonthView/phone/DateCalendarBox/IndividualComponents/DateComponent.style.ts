@@ -1,4 +1,11 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, TextStyle, ViewStyle } from "react-native"
+
+interface Style {
+    topOuterView: ViewStyle
+    selectedColor: ViewStyle
+    circleView: ViewStyle
+    textStyle: TextStyle
+}
 
 export default StyleSheet.create({
     topOuterView: {

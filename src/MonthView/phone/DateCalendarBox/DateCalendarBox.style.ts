@@ -1,6 +1,10 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, ViewStyle } from "react-native"
 
-export default StyleSheet.create({
+interface Style {
+    touchableContainer: ViewStyle
+}
+
+export default StyleSheet.create<Style>({
     touchableContainer: {
         flexDirection: "column",
         borderWidth: 1,
