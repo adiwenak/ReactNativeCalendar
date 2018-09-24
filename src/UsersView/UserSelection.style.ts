@@ -8,18 +8,6 @@ export const styles = StyleSheet.create({
         margin:1
     },
 
-    colorBlue1: {
-        backgroundColor: 'powderblue'
-    },
-
-    colorBlue2: {
-        backgroundColor: 'skyblue'
-    },
-
-    colorBlue3: {
-        backgroundColor: 'steelblue'
-    },
-
     textAlightCenter: {
         textAlign:"center", 
         margin: 8,

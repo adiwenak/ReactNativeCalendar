@@ -2,7 +2,7 @@
 import { Component } from "react"
 import * as React from "react"
 import { Text, View, ScrollView, StyleSheet, Button } from "react-native"
-import { styles } from './Users.style'
+import { styles } from './UserSelection.style'
 import { UserModel } from './UserModel';
 
 interface ComponentProps {
@@ -19,7 +19,7 @@ interface ComponentState {
     selectedUser: SelectedUser
 }
 
-export class Users extends Component<ComponentProps, ComponentState>
+export class UserSelection extends Component<ComponentProps, ComponentState>
 {
     constructor(props: any){
         super(props)
@@ -30,23 +30,24 @@ export class Users extends Component<ComponentProps, ComponentState>
 
     renderButtons() {
         if (this.props.userCollection){
+            const newSelectedUser = { ...this.state.selectedUser }
+            
             return this.props.userCollection!.map((x: UserModel, idx: number) => {
                 return  <View style={[styles.backgroundMidle]}> 
-                            <View style={{backgroundColor:x.pressStatus ? x.colour : 'white'}}>
+                            <View style={{backgroundColor:newSelectedUser[idx] ? x.colour : 'white'}}>
                             <Button 
-                                    color={x.pressStatus ? 'white' : 'black'} 
+                                    color={newSelectedUser[idx] ? 'white':'black'} 
                                     title={x.name} 
                                     onPress={() => { this.selectUser(x, idx)}} />
                             </View>
                         </View>
             })
         }
-        return
+        return null
     }
 
     selectUser = (user: UserModel, idx: number) => {
         const newSelectedUser = { ...this.state.selectedUser }
-        user.pressStatus = !user.pressStatus
         if (newSelectedUser[idx]) {
             delete newSelectedUser[idx]
         } else {
