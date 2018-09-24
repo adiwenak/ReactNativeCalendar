@@ -21,11 +21,11 @@ exports[`<ScrollListTaskComponent /> should render with given props 1`] = `
   style={
     Object {
       "backgroundColor": "pink",
+      "flex": 1,
       "flexDirection": "column",
       "height": 60,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 60,
     }
   }
   testID={undefined}
@@ -47,6 +47,7 @@ exports[`<ScrollListTaskComponent /> should render with given props 1`] = `
           "color": "#a9a9a9",
           "fontSize": 12,
           "fontWeight": "bold",
+          "marginBottom": 1,
         }
       }
     >
@@ -60,6 +61,7 @@ exports[`<ScrollListTaskComponent /> should render with given props 1`] = `
         Object {
           "color": "#a9a9a9",
           "fontSize": 12,
+          "marginTop": 1,
         }
       }
     >

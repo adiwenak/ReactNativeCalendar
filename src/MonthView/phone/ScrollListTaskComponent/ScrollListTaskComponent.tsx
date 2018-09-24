@@ -7,7 +7,6 @@ interface ComponentProps {
     task: string
     color: string
     height: number
-    width: number
     handleOnPress: () => void
 }
 
@@ -19,7 +18,6 @@ export const ScrollListTaskComponent = (props: ComponentProps) => {
                 styles.touchableContainer,
                 {
                     height: props.height,
-                    width: props.width,
                     backgroundColor: props.color
                 }
             ]}

@@ -11,7 +11,6 @@ describe("<ScrollListTaskComponent />", () => {
                 task={"Sleep"}
                 color={"pink"}
                 height={60}
-                width={60}
                 handleOnPress={jest.fn()}
             />).toJSON()
         expect(component).toMatchSnapshot()
