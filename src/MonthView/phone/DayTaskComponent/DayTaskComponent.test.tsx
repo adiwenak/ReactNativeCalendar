@@ -1,6 +1,6 @@
 import * as React from "react"
 import { create } from "react-test-renderer"
-import { DayTaskComponent } from "./ScrollListTaskComponent"
+import { DayTaskComponent } from "./DayTaskComponent"
 
 describe("<ScrollListTaskComponent />", () => {
 

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Text, TouchableOpacity, View } from "react-native"
-import styles from "./ScrollListTaskComponent.styles"
+import styles from "./DayTaskComponent.styles"
 
 interface ComponentProps {
     name: string
