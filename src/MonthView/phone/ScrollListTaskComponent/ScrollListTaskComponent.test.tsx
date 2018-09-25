@@ -1,16 +1,17 @@
 import * as React from "react"
 import { create } from "react-test-renderer"
-import { ScrollListTaskComponent } from "./ScrollListTaskComponent"
+import { DayTaskComponent } from "./ScrollListTaskComponent"
 
 describe("<ScrollListTaskComponent />", () => {
 
     it("should render with given props", () => {
         const component = create(
-            <ScrollListTaskComponent
+            <DayTaskComponent
                 name={"Adam"}
                 task={"Sleep"}
                 color={"pink"}
                 height={60}
+                nameFontSize={16}
                 handleOnPress={jest.fn()}
             />).toJSON()
         expect(component).toMatchSnapshot()

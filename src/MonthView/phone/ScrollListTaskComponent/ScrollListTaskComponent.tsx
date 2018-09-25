@@ -7,10 +7,11 @@ interface ComponentProps {
     task: string
     color: string
     height: number
+    nameFontSize: number
     handleOnPress: () => void
 }
 
-export const ScrollListTaskComponent = (props: ComponentProps) => {
+export const DayTaskComponent = (props: ComponentProps) => {
     return (
         <TouchableOpacity
             onPress={props.handleOnPress}
@@ -23,10 +24,10 @@ export const ScrollListTaskComponent = (props: ComponentProps) => {
             ]}
         >
             <View style={styles.viewContainer}>
-                <Text style={styles.textStyleName}>
+                <Text style={[styles.textStyleName, {fontSize: props.nameFontSize}]}>
                     {props.name}
                 </Text>
-                <Text style={styles.textStyleTask}>
+                <Text style={[styles.textStyleTask, {fontSize: props.nameFontSize - 2}]}>
                     {props.task}
                 </Text>
             </View>

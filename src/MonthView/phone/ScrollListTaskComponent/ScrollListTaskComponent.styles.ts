@@ -17,14 +17,12 @@ export default StyleSheet.create<Style>({
         paddingLeft: 4
     },
     textStyleName: {
-        color: "#a9a9a9",
+        color: "white",
         fontWeight: "bold",
-        fontSize: 12,
         marginBottom: 1
     },
     textStyleTask: {
-        color: "#a9a9a9",
-        fontSize: 12,
+        color: "white",
         marginTop: 1
     }
 })

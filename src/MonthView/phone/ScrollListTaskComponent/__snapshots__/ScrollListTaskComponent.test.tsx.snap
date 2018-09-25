@@ -43,12 +43,16 @@ exports[`<ScrollListTaskComponent /> should render with given props 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#a9a9a9",
-          "fontSize": 12,
-          "fontWeight": "bold",
-          "marginBottom": 1,
-        }
+        Array [
+          Object {
+            "color": "white",
+            "fontWeight": "bold",
+            "marginBottom": 1,
+          },
+          Object {
+            "fontSize": 16,
+          },
+        ]
       }
     >
       Adam
@@ -58,11 +62,15 @@ exports[`<ScrollListTaskComponent /> should render with given props 1`] = `
       allowFontScaling={true}
       ellipsizeMode="tail"
       style={
-        Object {
-          "color": "#a9a9a9",
-          "fontSize": 12,
-          "marginTop": 1,
-        }
+        Array [
+          Object {
+            "color": "white",
+            "marginTop": 1,
+          },
+          Object {
+            "fontSize": 14,
+          },
+        ]
       }
     >
       Sleep
