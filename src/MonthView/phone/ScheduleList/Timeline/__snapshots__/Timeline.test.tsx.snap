@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline /> should render with given props 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    08:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    09:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    10:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    11:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    12:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    13:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    14:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    15:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    16:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    17:00
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        },
+        Object {
+          "marginVertical": 16.5,
+        },
+      ]
+    }
+  >
+    18:00
+  </Text>
+</View>
+`;

@@ -1,0 +1,746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline /> should render with given props 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 4,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "paddingLeft": 10,
+            }
+          }
+        >
+          Event
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          08:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          09:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          10:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          11:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          12:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          13:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          14:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          15:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          16:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          17:00
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "textAlign": "center",
+              },
+              Object {
+                "marginVertical": 16.5,
+              },
+            ]
+          }
+        >
+          18:00
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 4,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 25,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "borderBottomColor": "#d3d3d3",
+                "borderBottomWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 50,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderLeftColor": "#d3d3d3",
+                "borderLeftWidth": 1,
+                "borderStyle": "solid",
+              },
+              Object {
+                "height": 25,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "#d3d3d3",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "position": "absolute",
+                },
+                Object {
+                  "borderRadius": 5,
+                  "height": 10,
+                  "left": -5,
+                  "top": -5,
+                  "width": 10,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

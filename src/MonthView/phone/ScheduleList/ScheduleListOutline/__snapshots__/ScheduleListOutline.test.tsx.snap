@@ -1,0 +1,466 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline /> should render with given props 1`] = `
+<View
+  style={
+    Object {
+      "flex": 4,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 25,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "borderBottomColor": "#d3d3d3",
+          "borderBottomWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 50,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderLeftColor": "#d3d3d3",
+          "borderLeftWidth": 1,
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 25,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#d3d3d3",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "position": "absolute",
+          },
+          Object {
+            "borderRadius": 5,
+            "height": 10,
+            "left": -5,
+            "top": -5,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
