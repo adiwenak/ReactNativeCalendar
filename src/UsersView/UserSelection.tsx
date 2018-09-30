@@ -1,15 +1,18 @@
 
 import { Component } from "react"
 import * as React from "react"
-import { Text, View, ScrollView, StyleSheet, Button } from "react-native"
+import { View, ScrollView, StyleSheet, Button } from "react-native"
 import { styles } from './UserSelection.style'
-import { UserModel } from './UserModel';
-import { log } from 'util';
 
 interface ComponentProps {
     userCollection: UserModel[]
     userSelectCollection: UserModel[]
     onSelectedEvent: (selectedUser: UserModel[]) => void
+}
+
+interface UserModel {
+    name: string
+    colour: string
 }
 
 interface SelectedUser {
@@ -33,12 +36,15 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
         if (this.props.userCollection){
             const newSelectedUser = { ...this.state.selectedUser }
             return this.props.userCollection!.map((x: UserModel, idx: number) => {
+                this.checkIfIsSelected(x, newSelectedUser, idx);
                 return  <View style={[styles.backgroundMidle]}> 
                             <View style={{backgroundColor:newSelectedUser[idx] ? x.colour : 'white'}}>
                             <Button 
                                     color={newSelectedUser[idx] ? 'white':'black'} 
                                     title={x.name} 
-                                    onPress={() => { this.selectUser(x, idx)}} />
+                                    onPress={() => { 
+                                        this.selectUser(x, idx)
+                                    }} />
                             </View>
                         </View>
             })
@@ -59,6 +65,13 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
         const allValues = Object.keys(newSelectedUser).map((key: any)=> newSelectedUser[key])
         
         this.props.onSelectedEvent(allValues)
+    }
+
+    private checkIfIsSelected(x: UserModel, newSelectedUser: { [x: number]: UserModel; }, idx: number) {
+        var filter = this.props.userSelectCollection.filter(userSelected => userSelected.name == x.name);
+        if (filter.length > 0) {
+            newSelectedUser[idx] = x;
+        }
     }
 
     render(){
