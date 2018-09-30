@@ -4,6 +4,7 @@ import * as React from "react"
 import { Text, View, ScrollView, StyleSheet, Button } from "react-native"
 import { styles } from './UserSelection.style'
 import { UserModel } from './UserModel';
+import { log } from 'util';
 
 interface ComponentProps {
     userCollection: UserModel[]
@@ -31,7 +32,6 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
     renderButtons() {
         if (this.props.userCollection){
             const newSelectedUser = { ...this.state.selectedUser }
-            
             return this.props.userCollection!.map((x: UserModel, idx: number) => {
                 return  <View style={[styles.backgroundMidle]}> 
                             <View style={{backgroundColor:newSelectedUser[idx] ? x.colour : 'white'}}>
@@ -43,6 +43,7 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
                         </View>
             })
         }
+
         return null
     }
 

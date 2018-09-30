@@ -1,7 +1,13 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, TextStyle, ViewStyle } from "react-native"
 
-export const styles = StyleSheet.create({
+interface Style {
+    backgroundMidle: ViewStyle
+    textAlightCenter: TextStyle
+    buttonUser: TextStyle
+    alightViewWithPadings: ViewStyle
+}
 
+export const styles = StyleSheet.create<Style>({
     backgroundMidle: {
         justifyContent: 'center', 
         alignItems: 'center',
@@ -25,5 +31,4 @@ export const styles = StyleSheet.create({
         marginHorizontal: 10, 
         marginTop:10
     }
-
 })

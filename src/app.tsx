@@ -1,7 +1,7 @@
 import { Component } from "react"
 import * as React from "react"
 import { View } from "react-native"
-import { UserModel } from './UsersView/usermodel';
+import { UserModel } from './UsersView/UserModel';
 import { UserSelection } from './UsersView/UserSelection';
 
 export class App extends Component<any, any> {
@@ -25,7 +25,7 @@ export class App extends Component<any, any> {
             <View>
                 <View style={{backgroundColor:'#1111', height: 60}}></View>
                 <UserSelection  userCollection={this.state.listUsers} 
-                                userSelectCollection={[]}
+                                userSelectCollection={this.state.listUsers}
                             onSelectedEvent={this.onSelectedEvent}/>
             </View>
         )
