@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeekDayHeader /> should render with given props 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "margin": 5,
+      "paddingLeft": 25,
+      "paddingRight": 25,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    S
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    M
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    W
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    T
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    F
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "black",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    S
+  </Text>
+</View>
+`;
