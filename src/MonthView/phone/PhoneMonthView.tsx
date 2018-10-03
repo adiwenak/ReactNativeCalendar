@@ -13,7 +13,7 @@ interface PhoneMonthViewState {
 export class PhoneMonthView extends React.Component<PhoneMonthViewProps, PhoneMonthViewState> {
     public render(): JSX.Element {
         return (
-            <View>
+            <View style={styles.container}>
                 <View style={styles.userSelectionContainer}>
                 </View>
                 <View style={styles.calendarMonthContainer}>
