@@ -17,21 +17,22 @@ export const Timeline = ({startTime, endTime, height}: TimelineProps) => {
     const indexOfStartTime = fullTimeArray.indexOf(startTime)
     const indexOfEndTime = fullTimeArray.indexOf(endTime)
     const keepTimeArray = fullTimeArrayRender.slice(indexOfStartTime, indexOfEndTime + 1)
-    const thirdOfHeight = height * 0.33
+    const halfOfHeight = height * 0.5
     const renderTextHandler = (time: string, index: number) => {
         return (
-            <Text
-                key={index}
-                style={[styles.textStyle, { marginVertical: thirdOfHeight }]}
-            >
-                {time}
-            </Text>
+            <View key={index} style={{height}}>
+                <Text style={styles.textStyle}>
+                    {time}
+                </Text>
+            </View>
         )
     }
 
     return (
         <View style={styles.outerViewContainer}>
-            {keepTimeArray.map(renderTextHandler)}
+            <View style={{height: halfOfHeight}}/>
+                {keepTimeArray.map(renderTextHandler)}
+            <View style={{height: halfOfHeight}}/>
         </View>
     )
 }

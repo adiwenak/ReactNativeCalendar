@@ -12,6 +12,7 @@ export default StyleSheet.create<Style>({
     textStyle: {
         textAlign: "center",
         fontSize: 14,
+        marginTop: -7.5,
         fontWeight: "bold",
         color: "black",
     }

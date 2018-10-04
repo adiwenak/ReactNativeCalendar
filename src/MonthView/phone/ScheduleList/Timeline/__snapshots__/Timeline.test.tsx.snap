@@ -8,225 +8,283 @@ exports[`<Timeline /> should render with given props 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
-      Array [
+      Object {
+        "height": 25,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      08:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    08:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      09:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    09:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      10:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    10:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      11:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    11:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      12:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    12:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      13:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    13:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      14:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    14:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      15:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    15:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      16:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    16:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      17:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 50,
+      }
     }
   >
-    17:00
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Array [
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
         Object {
           "color": "black",
           "fontSize": 14,
           "fontWeight": "bold",
+          "marginTop": -7.5,
           "textAlign": "center",
-        },
-        Object {
-          "marginVertical": 16.5,
-        },
-      ]
+        }
+      }
+    >
+      18:00
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 25,
+      }
     }
-  >
-    18:00
-  </Text>
+  />
 </View>
 `;
