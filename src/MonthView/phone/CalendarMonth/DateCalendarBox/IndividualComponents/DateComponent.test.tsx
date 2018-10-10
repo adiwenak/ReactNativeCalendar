@@ -1,6 +1,4 @@
-import { shallow } from "enzyme"
 import * as React from "react"
-import { TouchableOpacity } from "react-native"
 import { create } from "react-test-renderer"
 import { DateComponent } from "./DateComponent"
 

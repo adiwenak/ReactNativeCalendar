@@ -1,7 +1,6 @@
 import { shallow } from "enzyme"
 import * as React from "react"
 import { create } from "react-test-renderer"
-import { months } from "../../../../node_modules/moment"
 import { Month } from "../../../shared/model"
 import { MonthSelection, MonthSelectionState } from "./MonthSelection"
 

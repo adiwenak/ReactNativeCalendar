@@ -15,7 +15,7 @@ describe("<BusyIndicator />", () => {
         const component = create(
             <BusyIndicator
                 whosBusy={weBusy}
-                busyIndicatorHeight={10}
+                height={10}
             />).toJSON()
         expect(component).toMatchSnapshot()
     })

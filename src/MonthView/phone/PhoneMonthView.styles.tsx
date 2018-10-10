@@ -10,14 +10,13 @@ interface Styles {
 export const styles = StyleSheet.create<Styles>({
     container: {
         flex: 1,
+        marginTop: 20,
         backgroundColor: "azure"
     },
     userSelectionContainer: {
-        height: 50,
         marginBottom: 20
     },
     calendarMonthContainer: {
-        height: 150,
         marginBottom: 20
     },
     dayScheduleContainer: {

@@ -7,8 +7,6 @@ interface Style {
 export default StyleSheet.create<Style>({
     touchableContainer: {
         flexDirection: "column",
-        borderWidth: 1,
-        borderColor: "#000000",
         justifyContent: "space-between",
     }
 })
