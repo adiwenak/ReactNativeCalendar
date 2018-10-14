@@ -17,11 +17,12 @@ describe("<DateCalendarBox />", () => {
     it("should render with given props", () => {
         const component = create(
             <DateCalendarBox
-                date={"1"}
+                date={1}
                 isSelected={true}
+                isWeekend={false}
                 whosBusy={weBusy}
                 dateBoxOnPressHandler={onPressHandlerMock}
-                boxHeight={50}
+                boxWidth={50}
                 dateFontSize={16}
             />).toJSON()
         expect(component).toMatchSnapshot()
@@ -31,11 +32,12 @@ describe("<DateCalendarBox />", () => {
 
         const component = shallow(
             <DateCalendarBox
-                date={"1"}
+                date={1}
                 isSelected={true}
+                isWeekend={false}
                 whosBusy={weBusy}
                 dateBoxOnPressHandler={onPressHandlerMock}
-                boxHeight={50}
+                boxWidth={50}
                 dateFontSize={16}
             />
         )

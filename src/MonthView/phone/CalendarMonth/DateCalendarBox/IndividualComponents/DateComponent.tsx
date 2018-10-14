@@ -1,35 +1,46 @@
 import * as React from "react"
 import { Text, View } from "react-native"
+import { DateNumber } from "../../../../../shared/model"
 import styles from "./DateComponent.style"
 
 interface DateComponentProps {
-    date: string
+    date?: DateNumber
     isSelected: boolean
+    isWeekend: boolean
     dateFontSize: number
     dateComponentHeight: number
 }
 
-export const DateComponent = (props: DateComponentProps) => {
+const getDateTitle = (props: DateComponentProps) => {
+    const dateTitle = props.date ? `${props.date}` : ""
+    const dateStyle = props.isWeekend ? styles.textStyleWeekend : styles.textStyleWeekday
+    return (
+        <Text style={[dateStyle, {fontSize: props.dateFontSize}]}>
+            {dateTitle}
+        </Text>
+    )
+}
+
+const getSelectedDateTitle = (props: DateComponentProps) => {
     const circleSize = props.dateComponentHeight / 1.2
     const borderRadiusSize = circleSize / 2
+
+    return (
+        <View style={[
+            styles.selectedColor,
+            {height: circleSize, width: circleSize, borderRadius: borderRadiusSize}
+        ]}>
+            <View style={styles.circleView}>
+                {getDateTitle(props)}
+            </View>
+        </View>
+    )
+}
+
+export const DateComponent = (props: DateComponentProps) => {
     return (
         <View style={[styles.topOuterView, {height: props.dateComponentHeight}]}>
-            {props.isSelected ? (
-                <View style={[
-                    styles.selectedColor,
-                    {height: circleSize, width: circleSize, borderRadius: borderRadiusSize}
-                ]}>
-                    <View style={styles.circleView}>
-                        <Text style={[styles.textStyle, {fontSize: props.dateFontSize}]}>
-                            {props.date}
-                        </Text>
-                    </View>
-                </View>
-                ) : (
-                <Text style={[styles.textStyle, {fontSize: props.dateFontSize}]}>
-                    {props.date}
-                </Text>
-            )}
+            {props.isSelected ? getSelectedDateTitle(props) : getDateTitle(props)}
         </View>
     )
 }

@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import * as React from "react"
 import { create } from "react-test-renderer"
-import { Month } from "../../../shared/model"
+import { Month } from "../../../../shared/model"
 import { MonthSelection, MonthSelectionState } from "./MonthSelection"
 
 describe("<MonthSelection />", () => {

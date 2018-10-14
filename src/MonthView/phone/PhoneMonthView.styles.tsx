@@ -10,8 +10,7 @@ interface Styles {
 export const styles = StyleSheet.create<Styles>({
     container: {
         flex: 1,
-        marginTop: 20,
-        backgroundColor: "azure"
+        marginTop: 20
     },
     userSelectionContainer: {
         marginBottom: 20

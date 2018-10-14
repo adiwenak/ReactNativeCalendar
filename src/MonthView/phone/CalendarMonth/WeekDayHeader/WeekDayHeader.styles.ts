@@ -8,14 +8,13 @@ interface Style {
 export default StyleSheet.create<Style>({
     outerViewContainer: {
         flexDirection: "row",
-        justifyContent: "space-between",
-        margin: 5,
-        paddingLeft: 25,
-        paddingRight: 25
+        justifyContent: "space-between"
     },
     textStyle: {
-        fontSize: 16,
+        fontSize: 12,
+        flex: 1,
         color: "black",
         fontWeight: "bold",
+        textAlign: "center"
     }
 })

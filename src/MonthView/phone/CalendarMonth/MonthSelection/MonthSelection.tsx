@@ -2,7 +2,7 @@ import moment from "moment"
 import * as React from "react"
 import { Component } from "react"
 import { Image, Text, TouchableHighlight, View } from "react-native"
-import { Month } from "../../../shared/model"
+import { Month } from "../../../../shared/model"
 import { styles } from "./MonthSelection.styles"
 
 enum MonthAsString {
@@ -52,19 +52,25 @@ export class MonthSelection extends Component<MonthSelectionProps, MonthSelectio
                 <TouchableHighlight
                     onPress={this.handlePreviousButtonPress}
                     accessibilityLabel={"button-month-prev"}
-                    style={styles.containerButton}
+                    style={[styles.containerButton, styles.containerButtonLeft]}
                 >
-                    <Image source={require("./asset/arrow-back.png")} resizeMode={"center"}/>
+                    <Image
+                        source={require("./asset/arrow-back.png")} resizeMode={"center"}
+                        style={styles.button}
+                    />
                 </TouchableHighlight>
                 <View style={styles.containerTitle}>
                     <Text style={styles.title}>{title}</Text>
                 </View>
                 <TouchableHighlight
                     onPress={this.handleNextButtonPress}
-                    style={styles.containerButton}
                     accessibilityLabel={"button-month-next"}
+                    style={[styles.containerButton, styles.containerButtonRight]}
                 >
-                    <Image source={require("./asset/arrow-forward.png")} resizeMode={"center"}/>
+                    <Image
+                        source={require("./asset/arrow-forward.png")} resizeMode={"center"}
+                        style={styles.button}
+                    />
                 </TouchableHighlight>
             </View >
         )

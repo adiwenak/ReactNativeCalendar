@@ -4,7 +4,8 @@ interface Style {
     topOuterView: ViewStyle
     selectedColor: ViewStyle
     circleView: ViewStyle
-    textStyle: TextStyle
+    textStyleWeekday: TextStyle
+    textStyleWeekend: TextStyle
 }
 
 export default StyleSheet.create({
@@ -21,9 +22,14 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
-    textStyle: {
-        color: "#a9a9a9",
-        fontWeight: "bold",
-        fontSize: 16,
+    textStyleWeekday: {
+        color: "#323A48",
+        fontWeight: "500",
+        fontSize: 14
+    },
+    textStyleWeekend: {
+        color: "#768398",
+        fontWeight: "400",
+        fontSize: 14
     }
 })

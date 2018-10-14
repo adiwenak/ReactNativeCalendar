@@ -1,35 +1,41 @@
 import * as React from "react"
 import { Component } from "react"
 import { TouchableOpacity } from "react-native"
+import { DateNumber } from "../../../../shared/model"
 import styles from "./DateCalendarBox.style"
-
 import { BusyIndicator, BusyIndicatorObj, DateComponent } from "./IndividualComponents"
 
 interface ComponentProps {
-    date: string
+    date?: DateNumber
     isSelected: boolean
+    isWeekend: boolean
     whosBusy: BusyIndicatorObj[]
-    dateBoxOnPressHandler: (date: string) => void
-    boxHeight: number
+    dateBoxOnPressHandler: (date: DateNumber) => void
+    boxWidth: number
     dateFontSize: number
 }
 
 export class DateCalendarBox extends Component<ComponentProps> {
-    private dateComponentHeight = this.props.boxHeight * 0.7
-    private busyIndicatorHeight = this.props.boxHeight * 0.3
+    private dateComponentHeight = this.props.boxWidth * 0.7
+    private busyIndicatorHeight = this.props.boxWidth * 0.3
 
     public handleOnPress = () => {
-        this.props.dateBoxOnPressHandler(this.props.date)
+        if (this.props.date) {
+            this.props.dateBoxOnPressHandler(this.props.date)
+        }
     }
 
     public render() {
         return (
             <TouchableOpacity
-                style={[styles.touchableContainer, {height: this.props.boxHeight, width: this.props.boxHeight}]}
+                style={[
+                    styles.touchableContainer,
+                    {height: this.props.boxWidth * 0.8, width: this.props.boxWidth}]}
                 onPress={this.handleOnPress}
             >
                 <DateComponent
                     date={this.props.date}
+                    isWeekend={this.props.isWeekend}
                     isSelected={this.props.isSelected}
                     dateFontSize={this.props.dateFontSize}
                     dateComponentHeight={this.dateComponentHeight}
