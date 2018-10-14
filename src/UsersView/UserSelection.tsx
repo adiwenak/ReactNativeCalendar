@@ -1,8 +1,8 @@
 
 import { Component } from "react"
 import * as React from "react"
-import { View, ScrollView, StyleSheet, Button } from "react-native"
-import { styles } from './UserSelection.style'
+import { Button, ScrollView, View } from "react-native"
+import { styles } from "./UserSelection.style"
 
 interface ComponentProps {
     userCollection: UserSelectionModel[]
@@ -27,9 +27,8 @@ interface ComponentState {
     selectedUser: SelectedUser
 }
 
-export class UserSelection extends Component<ComponentProps, ComponentState>
-{
-    constructor(props: ComponentProps){
+export class UserSelection extends Component<ComponentProps, ComponentState> {
+    constructor(props: ComponentProps) {
         super(props)
         if (props.userCollection) {
             const selectedUser: SelectedUser = {}
@@ -50,15 +49,15 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
     }
 
     renderButtons() {
-        if (this.props.userCollection){
+        if (this.props.userCollection) {
             const newSelectedUser = { ...this.state.selectedUser }
             return this.props.userCollection!.map((x: UserModel, idx: number) => {
-                return  <View style={[styles.backgroundMidle]}> 
-                            <View style={{backgroundColor:newSelectedUser[idx] ? x.colour : 'white'}}>
-                            <Button 
-                                    color={newSelectedUser[idx] ? 'white':'black'} 
-                                    title={x.name} 
-                                    onPress={() => { 
+                return  <View style={[styles.backgroundMidle]}>
+                            <View style={{backgroundColor: newSelectedUser[idx] ? x.colour : "white"}}>
+                            <Button
+                                    color={newSelectedUser[idx] ? "white" : "black"}
+                                    title={x.name}
+                                    onPress={() => {
                                         this.selectUser(x, idx)
                                     }} />
                             </View>
@@ -78,12 +77,11 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
         }
 
         this.setState({ selectedUser: newSelectedUser })
-        const allValues = Object.keys(newSelectedUser).map((key: any)=> newSelectedUser[key])
-        
+        const allValues = Object.keys(newSelectedUser).map((key: any) => newSelectedUser[key])
         this.props.onSelectedEvent(allValues)
     }
 
-    render(){
+    render() {
         return (
             <ScrollView horizontal contentContainerStyle={{flexGrow: 1}}>
                 <View style={styles.alightViewWithPadings}>
@@ -93,4 +91,3 @@ export class UserSelection extends Component<ComponentProps, ComponentState>
         )
     }
 }
- 
