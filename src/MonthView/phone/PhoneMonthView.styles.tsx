@@ -13,9 +13,10 @@ export const styles = StyleSheet.create<Styles>({
         marginTop: 20
     },
     userSelectionContainer: {
-        marginBottom: 20
+        marginBottom: 10
     },
     calendarMonthContainer: {
+        flex: 1,
         marginBottom: 20
     },
     dayScheduleContainer: {

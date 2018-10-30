@@ -1,37 +1,34 @@
 import * as React from "react"
 import { View } from "react-native"
+import { User } from "../../../../../shared/model"
 import styles from "./BusyIndicator.style"
 
-export interface BusyIndicatorObj {
-    name: string
-    color: string
-}
-
 export interface BusyIndicatorProps {
-    whosBusy: BusyIndicatorObj[]
+    whosBusy: User[]
     height: number
 }
 
 export const BusyIndicator = (props: BusyIndicatorProps): JSX.Element => {
     const circleSize = props.height / 1.7
     const circleBorderRadius = circleSize / 2
-    const busyIndicatorPadding = props.height / 3
     return (
         <View style={[
             styles.bottomOuterView,
             {
                 height: props.height,
-                paddingHorizontal: busyIndicatorPadding
+                paddingBottom: 8
             }
         ]}>
-            {props.whosBusy.map((obj: BusyIndicatorObj) =>
+            {props.whosBusy.map((obj: User) =>
                     <View
-                        key={obj.color}
+                        key={obj.id}
                         style={{
                             height: circleSize,
                             width: circleSize,
                             borderRadius: circleBorderRadius,
-                            backgroundColor: obj.color
+                            marginLeft: 2,
+                            marginRight: 2,
+                            backgroundColor: obj.colourIndicator
                         }}
                     />
                 )

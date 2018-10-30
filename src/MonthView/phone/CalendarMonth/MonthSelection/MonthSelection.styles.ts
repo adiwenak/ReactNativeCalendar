@@ -21,10 +21,14 @@ export const styles = StyleSheet.create<Style>({
         alignItems: "center"
     },
     containerButtonLeft: {
-        marginLeft: 17
+        marginLeft: 17,
+        alignItems: "flex-start",
+        width: 40
     },
     containerButtonRight: {
-        marginRight: 17
+        marginRight: 17,
+        alignItems: "flex-end",
+        width: 40
     },
     containerTitle: {
         flex: 1,

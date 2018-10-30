@@ -39,7 +39,7 @@ const getSelectedDateTitle = (props: DateComponentProps) => {
 
 export const DateComponent = (props: DateComponentProps) => {
     return (
-        <View style={[styles.topOuterView, {height: props.dateComponentHeight}]}>
+        <View style={styles.topOuterView}>
             {props.isSelected ? getSelectedDateTitle(props) : getDateTitle(props)}
         </View>
     )

@@ -10,7 +10,7 @@ interface Style {
 
 export default StyleSheet.create({
     topOuterView: {
-        flex: 2,
+        flex: 1,
         justifyContent: "center",
         alignItems: "center",
     },

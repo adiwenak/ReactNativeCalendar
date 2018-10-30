@@ -1,48 +1,96 @@
 import moment from "moment"
 import * as React from "react"
 import { LayoutChangeEvent, View } from "react-native"
-import { DateNumber, Month } from "../../../shared/model"
+import { DateNumber, Month, Task, TaskSchedule, User } from "../../../shared/model"
 import { styles } from "./CalendarMonth.styles"
 import { DateCalendarBox } from "./DateCalendarBox"
 import { MonthSelection } from "./MonthSelection"
 import { WeekDayHeader } from "./WeekDayHeader"
 
-interface CalendarMonthProps {}
+export interface TaskAndUser {
+    user: User,
+    tasks: Task[]
+}
+
+interface CalendarMonthProps {
+    data?: TaskAndUser[]
+}
 
 interface CalendarMonthState {
     dateBoxWidth: number,
+    selectedDate?: DateNumber,
     currentMonth: Month,
-    currentYear: number
+    currentYear: number,
 }
 
-interface NBoxToDateNumber {
+interface BoxToDateNumberMap {
     [key: number]: DateObject
+}
+
+interface ScheduleToUserMap {
+    [key: number]: User[]
 }
 
 interface DateObject {
     dateNumber: DateNumber
     isWeekend: boolean
+    usersBusy: User[]
+    isSelected: boolean
 }
 
-const nBoxToDateMapper = (year: number, month: number): NBoxToDateNumber => {
+const nBoxToDateMapper = (year: number, month: number,
+                          scheduleToUserMap: ScheduleToUserMap,
+                          selectedDate?: DateNumber): BoxToDateNumberMap => {
     const date = new Date(year, month, 1)
-    const result: NBoxToDateNumber = {}
+    const result: BoxToDateNumberMap = {}
     let startDayOfTheMonth = date.getDay()
     while (date.getMonth() === month) {
         const currentDay = date.getDay()
+        const ms = date.getTime()
+        let usersBusy: User[] = []
         let isWeekend = false
+        const isSelected = date.getDate() === selectedDate
         if (currentDay === 0 || currentDay === 6) {
             isWeekend = true
         }
+
+        if (scheduleToUserMap[ms]) {
+            usersBusy = scheduleToUserMap[ms]
+        }
+
         result[startDayOfTheMonth] = {
             dateNumber: date.getDate() as DateNumber,
-            isWeekend
+            isWeekend,
+            usersBusy,
+            isSelected
         }
+
         startDayOfTheMonth += 1
         date.setDate(date.getDate() + 1)
     }
     return result
-  }
+}
+
+const flattenTaskSchedule = (data: TaskAndUser[]): ScheduleToUserMap => {
+    const mapped: ScheduleToUserMap = {}
+    data.forEach((value: TaskAndUser) => {
+        value.tasks.forEach((task: Task) => {
+            const dateOnly = new Date(task.startTime.getFullYear(), task.startTime.getMonth(), task.startTime.getDate())
+            const ms = dateOnly.getTime()
+            let arrayUser: User[] = []
+            if (!mapped[ms]) {
+                arrayUser = []
+            } else {
+                arrayUser = [...mapped[ms]]
+            }
+
+            arrayUser.push(value.user)
+            mapped[ms] = arrayUser
+        })
+    })
+
+    return mapped
+}
 
 export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarMonthState> {
 
@@ -51,13 +99,14 @@ export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarM
         super(props)
         this.state = {
             dateBoxWidth: 0,
-            currentMonth: Month.January,
+            currentMonth: Month.October,
             currentYear: moment().year()
         }
     }
 
-    generateBoxes() {
-        const all = nBoxToDateMapper(this.state.currentYear, this.state.currentMonth)
+    generateBoxes(data: ScheduleToUserMap) {
+        const all = nBoxToDateMapper(this.state.currentYear, this.state.currentMonth,
+            data, this.state.selectedDate)
         let n = 0
         const els = []
         while (n < this.boxes) {
@@ -70,9 +119,9 @@ export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarM
                         date={obj.dateNumber}
                         boxWidth={this.state.dateBoxWidth}
                         dateFontSize={13}
-                        isSelected={false}
+                        isSelected={obj.isSelected}
                         isWeekend={obj.isWeekend}
-                        whosBusy={[]}
+                        whosBusy={obj.usersBusy}
                         dateBoxOnPressHandler={this.onDatePress}
                         />
                 )
@@ -102,13 +151,19 @@ export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarM
     }
 
     public render(): JSX.Element {
-        const n = 0
-        const boxes = this.generateBoxes()
+        let indicator: ScheduleToUserMap = {}
+        if (this.props.data) {
+            indicator = flattenTaskSchedule(this.props.data)
+        }
+        const boxes = this.generateBoxes(indicator)
+
         return (
             <View style={styles.container}>
                 <View style={styles.containerMonthSelection}>
                     <MonthSelection
                         onMonthChange={this.onMonthChange}
+                        currentMonth={this.state.currentMonth}
+                        currentYear={this.state.currentYear}
                     />
                 </View>
                 <View style={styles.containerWeekday}>
@@ -131,11 +186,14 @@ export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarM
     private onMonthChange = (month: Month, year: number) => {
         this.setState({
             currentMonth: month,
-            currentYear: year
+            currentYear: year,
+            selectedDate: undefined
         })
     }
 
     private onDatePress = (date: DateNumber) => {
-        //
+        this.setState({
+            selectedDate: date
+        })
     }
 }

@@ -2,25 +2,20 @@
 import { Component } from "react"
 import * as React from "react"
 import { Button, ScrollView, View } from "react-native"
+import { User } from "../shared/model"
 import { styles } from "./UserSelection.style"
 
 interface ComponentProps {
-    userCollection: UserSelectionModel[]
-    onSelectedEvent: (selectedUser: UserModel[]) => void
+    data: UserSelectionModel[]
+    onSelectedEvent: (selectedUser: User[]) => void
 }
 
-interface UserModel {
-    id: string
-    name: string
-    colour: string
-}
-
-interface UserSelectionModel extends UserModel {
+export interface UserSelectionModel extends User {
     isSelected: boolean
 }
 
 interface SelectedUser {
-    [key: number]: UserModel
+    [key: number]: UserSelectionModel
 }
 
 interface ComponentState {
@@ -30,11 +25,11 @@ interface ComponentState {
 export class UserSelection extends Component<ComponentProps, ComponentState> {
     constructor(props: ComponentProps) {
         super(props)
-        if (props.userCollection) {
+        if (props.data) {
             const selectedUser: SelectedUser = {}
-            props.userCollection.forEach((value: UserSelectionModel, idx: number) => {
+            props.data.forEach((value: UserSelectionModel, idx: number) => {
                 if (value.isSelected) {
-                    selectedUser[idx] = props.userCollection[idx]
+                    selectedUser[idx] = props.data[idx]
                 }
             })
 
@@ -49,11 +44,11 @@ export class UserSelection extends Component<ComponentProps, ComponentState> {
     }
 
     renderButtons() {
-        if (this.props.userCollection) {
+        if (this.props.data) {
             const newSelectedUser = { ...this.state.selectedUser }
-            return this.props.userCollection!.map((x: UserModel, idx: number) => {
-                return  <View style={[styles.backgroundMidle]}>
-                            <View style={{backgroundColor: newSelectedUser[idx] ? x.colour : "white"}}>
+            return this.props.data!.map((x: UserSelectionModel, idx: number) => {
+                return  <View style={[styles.backgroundMidle]} key={`${idx}`}>
+                            <View style={{backgroundColor: newSelectedUser[idx] ? x.colourIndicator : "white"}}>
                             <Button
                                     color={newSelectedUser[idx] ? "white" : "black"}
                                     title={x.name}
@@ -68,7 +63,7 @@ export class UserSelection extends Component<ComponentProps, ComponentState> {
         return null
     }
 
-    selectUser = (user: UserModel, idx: number) => {
+    selectUser = (user: UserSelectionModel, idx: number) => {
         const newSelectedUser = { ...this.state.selectedUser }
         if (newSelectedUser[idx]) {
             delete newSelectedUser[idx]
@@ -83,7 +78,7 @@ export class UserSelection extends Component<ComponentProps, ComponentState> {
 
     render() {
         return (
-            <ScrollView horizontal contentContainerStyle={{flexGrow: 1}}>
+            <ScrollView style={styles.container}>
                 <View style={styles.alightViewWithPadings}>
                     {this.renderButtons()}
                 </View>

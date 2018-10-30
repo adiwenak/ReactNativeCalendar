@@ -1,6 +1,7 @@
 import { StyleSheet, TextStyle, ViewStyle } from "react-native"
 
 interface Style {
+    container: ViewStyle
     backgroundMidle: ViewStyle
     textAlightCenter: TextStyle
     buttonUser: TextStyle
@@ -8,27 +9,25 @@ interface Style {
 }
 
 export const styles = StyleSheet.create<Style>({
-    backgroundMidle: {
-        justifyContent: 'center', 
-        alignItems: 'center',
-        margin:1
+    container: {
     },
-
+    backgroundMidle: {
+        justifyContent: "center",
+        alignItems: "center",
+        margin: 1
+    },
     textAlightCenter: {
-        textAlign:"center", 
+        textAlign: "center",
         margin: 8,
     },
-
     buttonUser: {
-        textAlign:"center", 
-        color: 'white',
+        textAlign: "center",
+        color: "white",
     },
-
     alightViewWithPadings: {
-        flex: 1, 
-        flexDirection: 'row', 
-        justifyContent:"center", 
-        marginHorizontal: 10, 
-        marginTop:10
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "center",
+        height: 40
     }
 })

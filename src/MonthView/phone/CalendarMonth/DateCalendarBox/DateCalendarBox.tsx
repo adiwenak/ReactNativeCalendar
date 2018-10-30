@@ -1,24 +1,21 @@
 import * as React from "react"
 import { Component } from "react"
 import { TouchableOpacity } from "react-native"
-import { DateNumber } from "../../../../shared/model"
+import { DateNumber, User } from "../../../../shared/model"
 import styles from "./DateCalendarBox.style"
-import { BusyIndicator, BusyIndicatorObj, DateComponent } from "./IndividualComponents"
+import { BusyIndicator, DateComponent } from "./IndividualComponents"
 
 interface ComponentProps {
     date?: DateNumber
     isSelected: boolean
     isWeekend: boolean
-    whosBusy: BusyIndicatorObj[]
-    dateBoxOnPressHandler: (date: DateNumber) => void
     boxWidth: number
     dateFontSize: number
+    whosBusy: User[]
+    dateBoxOnPressHandler: (date: DateNumber) => void
 }
 
 export class DateCalendarBox extends Component<ComponentProps> {
-    private dateComponentHeight = this.props.boxWidth * 0.7
-    private busyIndicatorHeight = this.props.boxWidth * 0.3
-
     public handleOnPress = () => {
         if (this.props.date) {
             this.props.dateBoxOnPressHandler(this.props.date)
@@ -26,6 +23,8 @@ export class DateCalendarBox extends Component<ComponentProps> {
     }
 
     public render() {
+        const dateComponentHeight = this.props.boxWidth * 0.6
+        const busyIndicatorHeight = this.props.boxWidth * 0.2
         return (
             <TouchableOpacity
                 style={[
@@ -38,9 +37,9 @@ export class DateCalendarBox extends Component<ComponentProps> {
                     isWeekend={this.props.isWeekend}
                     isSelected={this.props.isSelected}
                     dateFontSize={this.props.dateFontSize}
-                    dateComponentHeight={this.dateComponentHeight}
+                    dateComponentHeight={dateComponentHeight}
                 />
-                <BusyIndicator whosBusy={this.props.whosBusy} height={this.busyIndicatorHeight}/>
+                <BusyIndicator whosBusy={this.props.whosBusy} height={busyIndicatorHeight}/>
             </TouchableOpacity>
         )
     }

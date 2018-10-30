@@ -7,7 +7,7 @@ interface Style {
 export default StyleSheet.create<Style>({
     bottomOuterView: {
         flex: 1,
-        justifyContent: "space-around",
+        justifyContent: "center",
         flexDirection: "row",
         alignItems: "center"
     }

@@ -25,6 +25,10 @@ export interface User {
 export interface Task {
     id: string
     name: string
-    startTime: number
-    endTime: number
+    startTime: Date
+    endTime: Date
+}
+
+export interface TaskSchedule {
+    [key: string]: Task[]
 }

@@ -6,7 +6,6 @@ interface Style {
 
 export default StyleSheet.create<Style>({
     touchableContainer: {
-        flexDirection: "column",
-        justifyContent: "space-between",
+        flexDirection: "column"
     }
 })
