@@ -22,6 +22,10 @@ export interface User {
     colourIndicator: string
 }
 
+export interface UserSelection extends User {
+    isSelected: boolean
+}
+
 export interface Task {
     id: string
     name: string

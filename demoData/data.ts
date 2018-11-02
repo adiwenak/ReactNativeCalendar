@@ -1,29 +1,33 @@
 import moment from "moment"
 import { Colours } from "../src/shared/colour"
-import { TaskSchedule, User } from "../src/shared/model"
+import { TaskSchedule, User, UserSelection } from "../src/shared/model"
 
-const user1: User = {
+const user1: UserSelection = {
     id: "1",
     name: "Ben Af",
-    colourIndicator: Colours.Cobalt
+    colourIndicator: Colours.Cobalt,
+    isSelected: true
 }
 
-const user2: User = {
+const user2: UserSelection = {
     id: "2",
     name: "Cardano",
-    colourIndicator: Colours.Cardinal
+    colourIndicator: Colours.Cardinal,
+    isSelected: true
 }
 
-const user3: User = {
+const user3: UserSelection = {
     id: "3",
     name: "Zester",
-    colourIndicator: Colours.Zest
+    colourIndicator: Colours.Zest,
+    isSelected: false
 }
 
-const user4: User = {
+const user4: UserSelection = {
     id: "4",
     name: "Green Lantern",
-    colourIndicator: Colours.LaPalma
+    colourIndicator: Colours.LaPalma,
+    isSelected: false
 }
 
 const date1 = moment().add(1, "days")

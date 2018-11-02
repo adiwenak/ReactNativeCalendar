@@ -1,33 +1,26 @@
 import * as React from "react"
 import { View } from "react-native"
-import { allUser, taskSchedules } from "../../../demoData/data"
-
-import { User } from "../../shared/model"
-import { UserSelection, UserSelectionModel } from "../../UsersView/UserSelection"
+import { TaskSchedule, UserSelection } from "../../shared/model"
+import { UserSelect } from "../../UsersSelect"
 import { CalendarMonth, TaskAndUser } from "./CalendarMonth/CalendarMonth"
 import { styles } from "./PhoneMonthView.styles"
 
 interface PhoneMonthViewProps {
-
+    users: UserSelection[]
+    tasks: TaskSchedule
 }
 
 interface PhoneMonthViewState {
     taskAndUsers: TaskAndUser[]
 }
 
-const userSelections = allUser.map<UserSelectionModel>((user) => {
-    return {
-        ...user,
-        isSelected: false
-    }
-})
-
 export class PhoneMonthView extends React.Component<PhoneMonthViewProps, PhoneMonthViewState> {
 
     constructor(props: PhoneMonthViewProps) {
         super(props)
+        const taskAndUsers = this.createTaskAndUser(props.users, props.tasks)
         this.state = {
-            taskAndUsers: []
+            taskAndUsers
         }
     }
 
@@ -35,8 +28,8 @@ export class PhoneMonthView extends React.Component<PhoneMonthViewProps, PhoneMo
         return (
             <View style={styles.container}>
                 <View style={styles.userSelectionContainer}>
-                    <UserSelection
-                        data={userSelections}
+                    <UserSelect
+                        data={this.props.users}
                         onSelectedEvent={this.onUserChange}
                     />
                 </View>
@@ -49,16 +42,26 @@ export class PhoneMonthView extends React.Component<PhoneMonthViewProps, PhoneMo
         )
     }
 
-    private onUserChange = (selectedUsers: User[]) => {
+    private createTaskAndUser = (users: UserSelection[], taskSchedule: TaskSchedule) => {
+
         const collections: TaskAndUser[] = []
-        selectedUsers.forEach((user: User) => {
-            const tasks = taskSchedules[user.id]
-            collections.push({
-                tasks,
-                user
-            })
+
+        users.forEach((user: UserSelection) => {
+            if (user.isSelected) {
+                const tasks = taskSchedule[user.id]
+                if (tasks) {
+                    collections.push({
+                        user,
+                        tasks
+                    })
+                }
+            }
         })
 
-        this.setState({taskAndUsers: collections})
+        return collections
+    }
+
+    private onUserChange = (selectedUsers: UserSelection[]) => {
+        this.setState({taskAndUsers: this.createTaskAndUser(selectedUsers, this.props.tasks)})
     }
 }

@@ -97,10 +97,11 @@ export class CalendarMonth extends React.Component<CalendarMonthProps, CalendarM
     private boxes = 35
     constructor(props: CalendarMonthProps) {
         super(props)
+        const today = moment()
         this.state = {
             dateBoxWidth: 0,
-            currentMonth: Month.October,
-            currentYear: moment().year()
+            currentMonth: today.month(),
+            currentYear: today.year()
         }
     }
 
