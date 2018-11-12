@@ -1,7 +1,7 @@
 import moment from "moment"
 import * as React from "react"
 import { LayoutChangeEvent, View } from "react-native"
-import { DateNumber, Month, Task, TaskSchedule, User } from "../../../shared/model"
+import { DateNumber, Month, Task, User } from "../../../shared/model"
 import { styles } from "./CalendarMonth.styles"
 import { DateCalendarBox } from "./DateCalendarBox"
 import { MonthSelection } from "./MonthSelection"

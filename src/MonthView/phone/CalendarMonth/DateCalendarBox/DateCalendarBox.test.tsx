@@ -1,17 +1,10 @@
 import { shallow } from "enzyme"
 import * as React from "react"
 import { create } from "react-test-renderer"
+import { userCollections } from "../__stubsData/data"
 import { DateCalendarBox } from "./DateCalendarBox"
 
 describe("<DateCalendarBox />", () => {
-    const weBusy = [
-        {name: "Adam", color: "blue"},
-        {name: "Adi", color: "green"},
-        {name: "Bruno", color: "red"},
-        {name: "George", color: "pink"},
-        {name: "Chiro", color: "black"},
-        {name: "Olivia", color: "grey"}
-    ]
     const onPressHandlerMock = jest.fn()
 
     it("should render with given props", () => {
@@ -20,7 +13,7 @@ describe("<DateCalendarBox />", () => {
                 date={1}
                 isSelected={true}
                 isWeekend={false}
-                whosBusy={weBusy}
+                whosBusy={userCollections}
                 dateBoxOnPressHandler={onPressHandlerMock}
                 boxWidth={50}
                 dateFontSize={16}
@@ -35,7 +28,7 @@ describe("<DateCalendarBox />", () => {
                 date={1}
                 isSelected={true}
                 isWeekend={false}
-                whosBusy={weBusy}
+                whosBusy={userCollections}
                 dateBoxOnPressHandler={onPressHandlerMock}
                 boxWidth={50}
                 dateFontSize={16}

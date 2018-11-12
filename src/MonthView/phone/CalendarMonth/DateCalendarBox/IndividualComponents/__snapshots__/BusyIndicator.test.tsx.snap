@@ -8,11 +8,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
         "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "space-around",
+        "justifyContent": "center",
       },
       Object {
-        "height": undefined,
-        "paddingHorizontal": NaN,
+        "height": 10,
+        "paddingBottom": 8,
       },
     ]
   }
@@ -21,9 +21,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "blue",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />
@@ -31,9 +33,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "green",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />
@@ -41,9 +45,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "red",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />
@@ -51,9 +57,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "pink",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />
@@ -61,9 +69,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "black",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />
@@ -71,9 +81,11 @@ exports[`<BusyIndicator /> should render with given props 1`] = `
     style={
       Object {
         "backgroundColor": "grey",
-        "borderRadius": NaN,
-        "height": NaN,
-        "width": NaN,
+        "borderRadius": 2.9411764705882355,
+        "height": 5.882352941176471,
+        "marginLeft": 2,
+        "marginRight": 2,
+        "width": 5.882352941176471,
       }
     }
   />

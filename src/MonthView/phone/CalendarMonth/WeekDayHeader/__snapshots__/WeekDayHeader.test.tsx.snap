@@ -6,9 +6,6 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     Object {
       "flexDirection": "row",
       "justifyContent": "space-between",
-      "margin": 5,
-      "paddingLeft": 25,
-      "paddingRight": 25,
     }
   }
 >
@@ -19,8 +16,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -33,8 +32,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -47,8 +48,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -61,8 +64,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -75,8 +80,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -89,8 +96,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >
@@ -103,8 +112,10 @@ exports[`<WeekDayHeader /> should render with given props 1`] = `
     style={
       Object {
         "color": "black",
-        "fontSize": 16,
+        "flex": 1,
+        "fontSize": 12,
         "fontWeight": "bold",
+        "textAlign": "center",
       }
     }
   >

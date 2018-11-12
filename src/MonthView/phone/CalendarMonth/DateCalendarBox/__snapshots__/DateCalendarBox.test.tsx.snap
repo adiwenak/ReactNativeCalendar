@@ -20,11 +20,8 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderColor": "#000000",
-      "borderWidth": 1,
       "flexDirection": "column",
-      "height": 50,
-      "justifyContent": "space-between",
+      "height": 40,
       "opacity": 1,
       "width": 50,
     }
@@ -34,16 +31,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 2,
-          "justifyContent": "center",
-        },
-        Object {
-          "height": 35,
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
     }
   >
     <View
@@ -53,9 +45,9 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
             "backgroundColor": "#FF1493",
           },
           Object {
-            "borderRadius": 14.583333333333334,
-            "height": 29.166666666666668,
-            "width": 29.166666666666668,
+            "borderRadius": 12.5,
+            "height": 25,
+            "width": 25,
           },
         ]
       }
@@ -76,9 +68,9 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
           style={
             Array [
               Object {
-                "color": "#a9a9a9",
-                "fontSize": 16,
-                "fontWeight": "bold",
+                "color": "#323A48",
+                "fontSize": 14,
+                "fontWeight": "500",
               },
               Object {
                 "fontSize": 16,
@@ -98,11 +90,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
           "alignItems": "center",
           "flex": 1,
           "flexDirection": "row",
-          "justifyContent": "space-around",
+          "justifyContent": "center",
         },
         Object {
-          "height": 15,
-          "paddingHorizontal": 5,
+          "height": 10,
+          "paddingBottom": 8,
         },
       ]
     }
@@ -111,9 +103,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "blue",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />
@@ -121,9 +115,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "green",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />
@@ -131,9 +127,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "red",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />
@@ -141,9 +139,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "pink",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />
@@ -151,9 +151,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "black",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />
@@ -161,9 +163,11 @@ exports[`<DateCalendarBox /> should render with given props 1`] = `
       style={
         Object {
           "backgroundColor": "grey",
-          "borderRadius": 4.411764705882353,
-          "height": 8.823529411764707,
-          "width": 8.823529411764707,
+          "borderRadius": 2.9411764705882355,
+          "height": 5.882352941176471,
+          "marginLeft": 2,
+          "marginRight": 2,
+          "width": 5.882352941176471,
         }
       }
     />

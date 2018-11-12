@@ -4,8 +4,8 @@ exports[`<MonthSelection /> should render with given props 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "flexDirection": "row",
-      "height": 30,
     }
   }
 >
@@ -26,10 +26,18 @@ exports[`<MonthSelection /> should render with given props 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "height": 30,
-        "width": 30,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": 20,
+        },
+        Object {
+          "alignItems": "flex-start",
+          "marginLeft": 17,
+          "width": 40,
+        },
+      ]
     }
     testID={undefined}
     tvParallaxProperties={undefined}
@@ -38,10 +46,15 @@ exports[`<MonthSelection /> should render with given props 1`] = `
       resizeMode="center"
       source={
         Object {
-          "testUri": "../../../src/MonthView/phone/MonthSelection/asset/arrow-back.png",
+          "testUri": "../../../src/MonthView/phone/CalendarMonth/MonthSelection/asset/arrow-back.png",
         }
       }
-      style={null}
+      style={
+        Object {
+          "height": 20,
+          "width": 20,
+        }
+      }
     />
   </View>
   <View
@@ -82,10 +95,18 @@ exports[`<MonthSelection /> should render with given props 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "height": 30,
-        "width": 30,
-      }
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": 20,
+        },
+        Object {
+          "alignItems": "flex-end",
+          "marginRight": 17,
+          "width": 40,
+        },
+      ]
     }
     testID={undefined}
     tvParallaxProperties={undefined}
@@ -94,10 +115,15 @@ exports[`<MonthSelection /> should render with given props 1`] = `
       resizeMode="center"
       source={
         Object {
-          "testUri": "../../../src/MonthView/phone/MonthSelection/asset/arrow-forward.png",
+          "testUri": "../../../src/MonthView/phone/CalendarMonth/MonthSelection/asset/arrow-forward.png",
         }
       }
-      style={null}
+      style={
+        Object {
+          "height": 20,
+          "width": 20,
+        }
+      }
     />
   </View>
 </View>
