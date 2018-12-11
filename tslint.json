@@ -7,7 +7,7 @@
     "rules": {
         "no-var-keyword": true,
         "semicolon": [true, "never"],
-        "indent": [false, "tabs", 4],
+        "indent": [false, "spaces", 2],
         "interface-name": [true, "never-prefix"],
         "no-empty-interface": false,
         "no-shadowed-variable": false,

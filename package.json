@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node node_modules/react-native/local-cli/cli.js start",
         "start:ios": "react-native run-ios",
-        "linting": "gulp tslint",
+        "linting": "tslint",
         "test": "jest"
     },
     "dependencies": {
